@@ -1,0 +1,9 @@
+# CPU-only dependencies used for all 24 offline checks on Python 3.12.
+# scripts/verify_public_results.py itself uses the standard library only.
+jax==0.5.3
+jaxlib==0.5.3
+numpy==2.5.4
+scipy==1.18.1
+ml_dtypes==0.6.0
+opt_einsum==3.4.0
+google-crc32c==1.7.1

@@ -1,0 +1,85 @@
+{
+  "status": "frozen",
+  "registered_at_utc": "2026-10-27T12:01:01.607093+00:00",
+  "strategy": "Persist autotuning once per policy graph; require complete cached decisions for every scored server. No weight, augmentation, R/N or task changes.",
+  "heldout_outcomes_accessed": false,
+  "ref_source_and_restart_proof_sha256": "f6afa61c0049100868f36d5faeb9fa375982ffce877ab85e22fe1d39f2364189",
+  "calibration_records": [
+    {
+      "name": "lora10_capture",
+      "model": "B1",
+      "num_steps": 10,
+      "output_sha256": [
+        "037150b7016198dbcaa17b01a7a7a32fed3cebc7c0a793563581bc649f8e971f",
+        "037150b7016198dbcaa17b01a7a7a32fed3cebc7c0a793563581bc649f8e971f",
+        "8f89327ff0c02504331a7a4659561569f862f547b1be5230f067083c5d96b8dd"
+      ],
+      "cache_sha256": "85cc6be47e68ff1f47223dbf777d38eef452df45b0797b47d352081524a45b31"
+    },
+    {
+      "name": "lora10_reload",
+      "model": "B1",
+      "num_steps": 10,
+      "output_sha256": [
+        "037150b7016198dbcaa17b01a7a7a32fed3cebc7c0a793563581bc649f8e971f",
+        "037150b7016198dbcaa17b01a7a7a32fed3cebc7c0a793563581bc649f8e971f",
+        "8f89327ff0c02504331a7a4659561569f862f547b1be5230f067083c5d96b8dd"
+      ],
+      "cache_sha256": "85cc6be47e68ff1f47223dbf777d38eef452df45b0797b47d352081524a45b31"
+    },
+    {
+      "name": "A1_lora10_reload",
+      "model": "A1",
+      "num_steps": 10,
+      "output_sha256": [
+        "f63380db66838cbee02ca2b49e53b5d525543a9f1cf5ce1af5280de7f1217f25",
+        "f63380db66838cbee02ca2b49e53b5d525543a9f1cf5ce1af5280de7f1217f25",
+        "8f92161055372b6aa618c65f6722d91698cc5addcf1a7319d7774ff8addb9f1c"
+      ],
+      "cache_sha256": "85cc6be47e68ff1f47223dbf777d38eef452df45b0797b47d352081524a45b31"
+    },
+    {
+      "name": "lora3_capture",
+      "model": "A1",
+      "num_steps": 3,
+      "output_sha256": [
+        "851725d00b12ae0b243c82f273dba6086f7ff1f4d315b49c06d255849f8e600e",
+        "851725d00b12ae0b243c82f273dba6086f7ff1f4d315b49c06d255849f8e600e",
+        "3e0df2b78a55efb571249d223826631135528da0bb73df42a7e41199af5ba54a"
+      ],
+      "cache_sha256": "9723e31849d85ce465fb6c44626d27efeb5cbcb68fefa4b9f52815bfe65b79c6"
+    },
+    {
+      "name": "lora3_reload",
+      "model": "A1",
+      "num_steps": 3,
+      "output_sha256": [
+        "851725d00b12ae0b243c82f273dba6086f7ff1f4d315b49c06d255849f8e600e",
+        "851725d00b12ae0b243c82f273dba6086f7ff1f4d315b49c06d255849f8e600e",
+        "3e0df2b78a55efb571249d223826631135528da0bb73df42a7e41199af5ba54a"
+      ],
+      "cache_sha256": "9723e31849d85ce465fb6c44626d27efeb5cbcb68fefa4b9f52815bfe65b79c6"
+    }
+  ],
+  "caches": {
+    "pi05_libero_N10": {
+      "path": "/root/autodl-tmp/vla_reproduction/pi05_robustness/cache/inference_autotune/ref_N10.pb",
+      "sha256": "03bfec5ad13fa98ceaa3dfce9f28512bf1840ecbdc677fb15d63d847e16f822c",
+      "bytes": 16433
+    },
+    "pi05_libero_lora_ft_N10": {
+      "path": "/root/autodl-tmp/vla_reproduction/pi05_robustness/cache/inference_autotune/lora_N10.pb",
+      "sha256": "85cc6be47e68ff1f47223dbf777d38eef452df45b0797b47d352081524a45b31",
+      "bytes": 19852
+    },
+    "pi05_libero_lora_ft_N3": {
+      "path": "/root/autodl-tmp/vla_reproduction/pi05_robustness/cache/inference_autotune/lora_N3.pb",
+      "sha256": "9723e31849d85ce465fb6c44626d27efeb5cbcb68fefa4b9f52815bfe65b79c6",
+      "bytes": 19854
+    }
+  },
+  "original_exact_episode_replay": "Failed, retained as a diagnostic. Original389/400 and pre-fix387/400 are separate historical evaluations; neither pooled nor relabeled as a method gain.",
+  "final_reference_rule": "Run a fresh Ref400 with fixed kernel decisions; use the common final execution settings for Ref/B1/A1. Preserve all old results and register runtime amendment before heldout.",
+  "claim_scope": "Fixed-input byte equality across restarts/source variants plus cached-kernel enforcement; does not prove universal GPU determinism or training-seed robustness.",
+  "reference": "https://openxla.org/xla/determinism"
+}

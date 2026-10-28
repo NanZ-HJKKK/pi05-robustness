@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "registered_at_utc": "2026-10-27T01:40:55.234194+00:00",
+  "stage": "Before any Ref Plus outcome; clean baseline complete and camera diagnosis running",
+  "base_protocol_sha256": "c1eeba69d8c0ed02a2c1eb6e04e89c384bed97f2a902679e55c7767e58d9eb97",
+  "diagnostic_subset_sha256": "0bc32f76648b8f752e3ab894750434bedd8266de3d2d8c9b99206db197a48d9e",
+  "heldout_subset_sha256": "f8f7658c16eec11b7423651e6acb63e73571a249dda6780111fca23ad9fa94e8",
+  "disjoint_exact_task_ids": true,
+  "diagnostic_episodes": 210,
+  "heldout_episodes_per_model": 210,
+  "selection_rule": "Diagnose Ref on diagnostic210 and camera ablation; freeze training plan before viewing heldout outcomes",
+  "models_on_holdout": [
+    "Ref",
+    "B1",
+    "A1"
+  ],
+  "other_settings": "Base protocol unchanged, including canonical prompts, seed7, initial-state index0 and flow-noise rule",
+  "planned_formal_episodes": 2740,
+  "limits": "Same40 base tasks; exact variants disjoint, not unseen-task generalization. One training seed remains exploratory."
+}

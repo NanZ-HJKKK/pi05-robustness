@@ -1,0 +1,228 @@
+{
+  "status": "audited_bounded_rgb_exception",
+  "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+  "field": "initial_main_rgb_sha256",
+  "raw_hashes": [
+    "897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496",
+    "d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c"
+  ],
+  "metrics": {
+    "raw": {
+      "shape": [
+        256,
+        256,
+        3
+      ],
+      "total_channels": 196608,
+      "changed_channels": 9,
+      "max_uint8_difference": 1,
+      "coordinates": [
+        [
+          84,
+          124,
+          2
+        ],
+        [
+          84,
+          127,
+          1
+        ],
+        [
+          85,
+          125,
+          0
+        ],
+        [
+          85,
+          125,
+          1
+        ],
+        [
+          86,
+          125,
+          0
+        ],
+        [
+          86,
+          125,
+          1
+        ],
+        [
+          87,
+          125,
+          0
+        ],
+        [
+          87,
+          125,
+          1
+        ],
+        [
+          87,
+          125,
+          2
+        ]
+      ],
+      "values_at_changed_channels": [
+        [
+          80,
+          79
+        ],
+        [
+          86,
+          85
+        ],
+        [
+          85,
+          84
+        ],
+        [
+          85,
+          84
+        ],
+        [
+          85,
+          84
+        ],
+        [
+          85,
+          84
+        ],
+        [
+          84,
+          83
+        ],
+        [
+          84,
+          83
+        ],
+        [
+          82,
+          81
+        ]
+      ],
+      "sha256": [
+        "897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496",
+        "d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c"
+      ]
+    },
+    "model_input": {
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "total_channels": 150528,
+      "changed_channels": 10,
+      "max_uint8_difference": 1,
+      "coordinates": [
+        [
+          147,
+          113,
+          2
+        ],
+        [
+          147,
+          114,
+          0
+        ],
+        [
+          147,
+          114,
+          1
+        ],
+        [
+          148,
+          114,
+          0
+        ],
+        [
+          148,
+          114,
+          1
+        ],
+        [
+          149,
+          114,
+          0
+        ],
+        [
+          149,
+          114,
+          1
+        ],
+        [
+          149,
+          115,
+          2
+        ],
+        [
+          150,
+          112,
+          1
+        ],
+        [
+          150,
+          115,
+          2
+        ]
+      ],
+      "values_at_changed_channels": [
+        [
+          83,
+          82
+        ],
+        [
+          83,
+          82
+        ],
+        [
+          83,
+          82
+        ],
+        [
+          84,
+          83
+        ],
+        [
+          84,
+          83
+        ],
+        [
+          84,
+          83
+        ],
+        [
+          84,
+          83
+        ],
+        [
+          78,
+          77
+        ],
+        [
+          86,
+          85
+        ],
+        [
+          77,
+          76
+        ]
+      ],
+      "sha256": [
+        "0d99261d821cdc928139c10f3b0a773226d89bb3f30db40b46144b3b9d57a65e",
+        "b1094fc14c32aa66ad2b0076e5e529943fad502b8abf8ac470b8f7227df0d5fb"
+      ]
+    }
+  },
+  "recovered_files": [
+    "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/render_hash_exception/0/897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496.npz",
+    "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/render_hash_exception/1/d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c.npz"
+  ],
+  "physical_state_and_all_other_pairing_fields_equal": true,
+  "all_three_observed_successes": true,
+  "original_strict_pixel_gate_passed": false,
+  "model_input_byte_identical": false,
+  "original_records_unchanged": true,
+  "interpretation": "The exact original frames were recovered by hash. Full210 counts remain unchanged; comparisons applying this sole exception must disclose it and also report strict209 sensitivity. No generic pixel tolerance is authorized."
+}

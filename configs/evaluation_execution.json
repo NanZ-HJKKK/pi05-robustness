@@ -1,0 +1,24 @@
+{
+  "status": "registered_before_final_evaluation",
+  "at_utc": "2026-10-27T03:50:54.339155+00:00",
+  "quality_runs": {
+    "clients": 4,
+    "partition": "one simulator process per suite, one shared stateless policy server; fixed per-episode/step seeds",
+    "gpu_preallocation_fraction": 0.8,
+    "same_for": [
+      "Ref",
+      "B1",
+      "A1"
+    ],
+    "timing_scope": "Do not use concurrent request or feedback latency in inference efficiency comparisons"
+  },
+  "efficiency_runs": {
+    "clients": 1,
+    "gpu_preallocation_fraction": 0.9,
+    "settings": "existing five R/N settings; unchanged"
+  },
+  "additional_Ref_clean400": "Re-run instrumented Ref under common final source/concurrency; compare all400 outcomes and initial input hashes to original baseline. Separate run, never pool as800 independent episodes.",
+  "additional_scored_episodes": 400,
+  "planned_total_including_repeat": 3140,
+  "upstream_atomic_inference_check": "Pinned websocket_policy_server calls synchronous policy.infer without await; wrapper sets policy PRNG from request seed before every call. Synchronized infer returns before next websocket task."
+}

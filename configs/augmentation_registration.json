@@ -1,0 +1,44 @@
+{
+  "status": "augmentation_registered_before_heldout_and_formal_training",
+  "registered_at_utc": "2026-10-27T03:39:22.686838+00:00",
+  "mode": "view_wrist_drop",
+  "diagnosis_report_sha256": "cc70298e85ac24fee6fd1dd1ce24da439f0e487e92964f86dbc076eb0a072c36",
+  "failure_review_sha256": "230ac5b046f00479324022d117d66318daf3a8c61aba2f1257943fee903bc97c",
+  "diagnostic_episodes": 210,
+  "diagnostic_successes": 180,
+  "visual_target": "Camera Viewpoints",
+  "camera_diagnostic": {
+    "black_main_successes": 49,
+    "black_wrist_successes": 0,
+    "episodes_each": 100
+  },
+  "diagnostic_camera_subtypes": {
+    "all_8_failures": "main-view rotations or field-of-view changes; wrist-only variants in this diagnostic sample all succeed",
+    "interpretation": "Main geometry sensitivity plus severe wrist-black dependence motivates geometry coverage and occasional wrist dropout. Not proof of an internal attention mechanism."
+  },
+  "main": {
+    "apply_probability": 0.5,
+    "corner_displacement_fraction": 0.08,
+    "rotation_degrees": [
+      -25,
+      25
+    ],
+    "image_scale": [
+      0.65,
+      1.35
+    ],
+    "interpolation": "bilinear",
+    "border": "nearest"
+  },
+  "wrist": {
+    "black_drop_probability": 0.15,
+    "geometry_changed": false,
+    "mask_remains_valid": true
+  },
+  "inactive_view_unchanged": true,
+  "default_augmax_retained": true,
+  "inference_extra_augmentation": false,
+  "helper_sha256": "ea1b6407aa7cd4c40633dd7f58777f5ba51f5d751115ac710f8f861f7a501612",
+  "controls": "B1/A1 share data, initialization, seed, batch, optimizer, step count, last-checkpoint rule; only augmentation differs. Resource probe sets feasible batch before formal training.",
+  "claim_scope": "Single training seed, fixed task and perturbation subsets; geometry approximated in image space. No final heldout outcome accessed."
+}

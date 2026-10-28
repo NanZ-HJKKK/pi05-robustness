@@ -1,0 +1,8 @@
+{
+  "timing": "Post hoc data-quality investigation after all scored outcomes were available",
+  "strict_pixel_pairing_deviation_count": 1,
+  "exception_proof_sha256": "8d0d65f604eb539c4b596034e44d3861cc15560b61db14a548d0476be74c02a7",
+  "rule": "Only this exact pair ID and these two recovered raw hashes may bypass the main-RGB equality gate; all other fields stay exact. Report full210 and strict209 sensitivity, retain all original outcomes.",
+  "primary_camera_clean_and_efficiency_inputs": "All exact; no exception applies",
+  "weights_or_episode_scores_changed": false
+}

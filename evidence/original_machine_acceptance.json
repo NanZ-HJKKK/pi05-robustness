@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-27T17:15:14.618185+00:00",
+  "archive_sha256": "9dbb9cc20b877eb24bda36314e98c29dbbc8210fda823cea8b6c1b95ce441784",
+  "verified_payload_files": 4197,
+  "episodes_checked": 2330,
+  "jobs": [
+    {
+      "model": "Ref",
+      "kind": "clean",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/Ref_clean_R5_N10_20261027T120106Z",
+      "episodes": 400,
+      "successes": 384
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/Ref_plus_R5_N10_20261027T120106Z",
+      "episodes": 210,
+      "successes": 173
+    },
+    {
+      "model": "B1",
+      "kind": "clean",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/B1_clean_R5_N10_20261027T120106Z",
+      "episodes": 400,
+      "successes": 390
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/B1_plus_R5_N10_20261027T120106Z",
+      "episodes": 210,
+      "successes": 179
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_clean_R5_N10_20261027T120106Z",
+      "episodes": 400,
+      "successes": 389
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_plus_R5_N10_20261027T120106Z",
+      "episodes": 210,
+      "successes": 179
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 1,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R1_N10_20261027T120106Z",
+      "episodes": 100,
+      "successes": 99
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R5_N10_20261027T120106Z",
+      "episodes": 100,
+      "successes": 99
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 10,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R10_N10_20261027T120106Z",
+      "episodes": 100,
+      "successes": 96
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 5,
+      "num_steps": 3,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R5_N3_20261027T120106Z",
+      "episodes": 100,
+      "successes": 99
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 10,
+      "num_steps": 3,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R10_N3_20261027T120106Z",
+      "episodes": 100,
+      "successes": 100
+    }
+  ],
+  "local_paired_statistics_match": true,
+  "manual_video_review_complete": false,
+  "github_published": false,
+  "all_original_strict_pairing_gates_passed": false,
+  "bounded_rgb_exception_count": 1,
+  "bounded_rgb_exception_independently_verified": true,
+  "scope": "Full archive hashes, coverage, raw action/reward/done/seed checks and independent local paired-statistic recalculation. Video content review and publication remain separate."
+}

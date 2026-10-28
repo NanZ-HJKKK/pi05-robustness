@@ -1,0 +1,250 @@
+[
+  {
+    "model": "Ref",
+    "kind": "clean",
+    "serial": false,
+    "replan_steps": 5,
+    "num_steps": 10,
+    "records": "results/episodes/Ref_clean_R5_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 400,
+    "successes": 384,
+    "original_record_sources": [
+      {
+        "path": "runs/Ref_clean_R5_N10_20261027T120106Z/episodes/libero_10/episodes.jsonl",
+        "sha256": "876859cc0c7a5223df2b57336f12322e9df3a678e2cef06a66c8bbb22e603a15"
+      },
+      {
+        "path": "runs/Ref_clean_R5_N10_20261027T120106Z/episodes/libero_goal/episodes.jsonl",
+        "sha256": "15b03ba9bfa499c4c263096aabde9fd277dcf2b2f5ba7dbd0572fc55ced3cae5"
+      },
+      {
+        "path": "runs/Ref_clean_R5_N10_20261027T120106Z/episodes/libero_object/episodes.jsonl",
+        "sha256": "2cbc3dd245c0c7512d452243eb08bac76d2c4e2121f289ac87e6555d410b7ab2"
+      },
+      {
+        "path": "runs/Ref_clean_R5_N10_20261027T120106Z/episodes/libero_spatial/episodes.jsonl",
+        "sha256": "609f644473a4304231513f63180fd08ad09ea8cbc15c7a65bde8eaec8cb6159c"
+      }
+    ]
+  },
+  {
+    "model": "Ref",
+    "kind": "plus",
+    "serial": false,
+    "replan_steps": 5,
+    "num_steps": 10,
+    "records": "results/episodes/Ref_plus_R5_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 210,
+    "successes": 173,
+    "original_record_sources": [
+      {
+        "path": "runs/Ref_plus_R5_N10_20261027T120106Z/episodes/libero_10/episodes.jsonl",
+        "sha256": "0a9d26cba04ac1d31603be40acd352bc9ae085fbac7a3f8eca17f9dfbc1e6d86"
+      },
+      {
+        "path": "runs/Ref_plus_R5_N10_20261027T120106Z/episodes/libero_goal/episodes.jsonl",
+        "sha256": "9675b987d255da115a07cf79a8b2590c6b80f89d0f9fcd40d20078a9b2a3f2bd"
+      },
+      {
+        "path": "runs/Ref_plus_R5_N10_20261027T120106Z/episodes/libero_object/episodes.jsonl",
+        "sha256": "d2a2210f9cb4b6339caffdb786d78c8cab7fed9eeb62f0ba3fce1befd93d29bb"
+      },
+      {
+        "path": "runs/Ref_plus_R5_N10_20261027T120106Z/episodes/libero_spatial/episodes.jsonl",
+        "sha256": "81028184b58e7ad692ef7d727370387561969c214b251acbcb2ec41491e052ae"
+      }
+    ]
+  },
+  {
+    "model": "B1",
+    "kind": "clean",
+    "serial": false,
+    "replan_steps": 5,
+    "num_steps": 10,
+    "records": "results/episodes/B1_clean_R5_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 400,
+    "successes": 390,
+    "original_record_sources": [
+      {
+        "path": "runs/B1_clean_R5_N10_20261027T120106Z/episodes/libero_10/episodes.jsonl",
+        "sha256": "720cdb9ccac7e1b0f90696cccc39cc3b50b8b64ad15afa3ba7bff74123df4e02"
+      },
+      {
+        "path": "runs/B1_clean_R5_N10_20261027T120106Z/episodes/libero_goal/episodes.jsonl",
+        "sha256": "effef7cfd106161fa0e5effe51e5ff4b2e4a5f781e17037e203a3d91014cb06f"
+      },
+      {
+        "path": "runs/B1_clean_R5_N10_20261027T120106Z/episodes/libero_object/episodes.jsonl",
+        "sha256": "4897d1a0917122be83927173f7818373f0b1f8460b80e28db66560cb71267489"
+      },
+      {
+        "path": "runs/B1_clean_R5_N10_20261027T120106Z/episodes/libero_spatial/episodes.jsonl",
+        "sha256": "62b00ba91a8cc7f97da5c76372614f80fc2d3ed03520ba5e3a325c555cc4b5d5"
+      }
+    ]
+  },
+  {
+    "model": "B1",
+    "kind": "plus",
+    "serial": false,
+    "replan_steps": 5,
+    "num_steps": 10,
+    "records": "results/episodes/B1_plus_R5_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 210,
+    "successes": 179,
+    "original_record_sources": [
+      {
+        "path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_10/episodes.jsonl",
+        "sha256": "eabb8d6e39e54d437cf1548489d43e52da31e38f5bb763ba665ac961fcb26509"
+      },
+      {
+        "path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_goal/episodes.jsonl",
+        "sha256": "731d4584b74bd7066fd45f788d0de8e6623a52842e570511a37f2589b5408d6a"
+      },
+      {
+        "path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_object/episodes.jsonl",
+        "sha256": "58699d51c010c20ae8171221c0acff63f134675f3bbac19caedb9e184544d0be"
+      },
+      {
+        "path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_spatial/episodes.jsonl",
+        "sha256": "29dbbd7e9cae38ade12dbefef9e8322518e5ab821882a3ca583817e79344633b"
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "kind": "clean",
+    "serial": false,
+    "replan_steps": 5,
+    "num_steps": 10,
+    "records": "results/episodes/A1_clean_R5_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 400,
+    "successes": 389,
+    "original_record_sources": [
+      {
+        "path": "runs/A1_clean_R5_N10_20261027T120106Z/episodes/libero_10/episodes.jsonl",
+        "sha256": "670c530ba56ab97ff582326a32469db87648b3900c4a3ba95fcd02af0560bb9d"
+      },
+      {
+        "path": "runs/A1_clean_R5_N10_20261027T120106Z/episodes/libero_goal/episodes.jsonl",
+        "sha256": "7668cf6aff6f45aa969757520b0e101162ee1007e83841176617747e4b9873a2"
+      },
+      {
+        "path": "runs/A1_clean_R5_N10_20261027T120106Z/episodes/libero_object/episodes.jsonl",
+        "sha256": "5c5c1bafa5ef3b397a26071e526adabd4ea552456ed237628fc4bde717c3fd6b"
+      },
+      {
+        "path": "runs/A1_clean_R5_N10_20261027T120106Z/episodes/libero_spatial/episodes.jsonl",
+        "sha256": "a83f8d0134363a940e3325fe45ab3b59444aab2211093f375f8c62632bd47d39"
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "kind": "plus",
+    "serial": false,
+    "replan_steps": 5,
+    "num_steps": 10,
+    "records": "results/episodes/A1_plus_R5_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 210,
+    "successes": 179,
+    "original_record_sources": [
+      {
+        "path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_10/episodes.jsonl",
+        "sha256": "ee35783893f6c962a2dc93be4447329181271ba513aa9389e0d9ec088143384d"
+      },
+      {
+        "path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_goal/episodes.jsonl",
+        "sha256": "b5674793d406d0dfe2d29d169461b00397643d782343843667c52639e8b59221"
+      },
+      {
+        "path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_object/episodes.jsonl",
+        "sha256": "ad772c2c8fd277dce9d59e0f6d8b6476e17f99899fc3edab4e48fb665aa49040"
+      },
+      {
+        "path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_spatial/episodes.jsonl",
+        "sha256": "1a0f6529e6dff1f31b015d316b4ad92e477cb9f6fa8ae1a22731286db28b67a0"
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "kind": "clean",
+    "serial": true,
+    "replan_steps": 1,
+    "num_steps": 10,
+    "records": "results/episodes/A1_efficiency_R1_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 100,
+    "successes": 99,
+    "original_record_sources": [
+      {
+        "path": "runs/A1_efficiency_R1_N10_20261027T120106Z/episodes/episodes.jsonl",
+        "sha256": "ed56fa1605e64e2c1a6a5e61ac798701dea51ee865967eedbcc63d534e12970a"
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "kind": "clean",
+    "serial": true,
+    "replan_steps": 5,
+    "num_steps": 10,
+    "records": "results/episodes/A1_efficiency_R5_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 100,
+    "successes": 99,
+    "original_record_sources": [
+      {
+        "path": "runs/A1_efficiency_R5_N10_20261027T120106Z/episodes/episodes.jsonl",
+        "sha256": "5709434bca128d9e26f6b322e87ab34068e22b688af32d86df3b3bb7fcab5be5"
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "kind": "clean",
+    "serial": true,
+    "replan_steps": 10,
+    "num_steps": 10,
+    "records": "results/episodes/A1_efficiency_R10_N10_20261027T120106Z.jsonl.gz",
+    "episodes": 100,
+    "successes": 96,
+    "original_record_sources": [
+      {
+        "path": "runs/A1_efficiency_R10_N10_20261027T120106Z/episodes/episodes.jsonl",
+        "sha256": "bbd4d6bfb9a848e899a1c604c1e5f0957ef80903609483ea04b8b371220f07d8"
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "kind": "clean",
+    "serial": true,
+    "replan_steps": 5,
+    "num_steps": 3,
+    "records": "results/episodes/A1_efficiency_R5_N3_20261027T120106Z.jsonl.gz",
+    "episodes": 100,
+    "successes": 99,
+    "original_record_sources": [
+      {
+        "path": "runs/A1_efficiency_R5_N3_20261027T120106Z/episodes/episodes.jsonl",
+        "sha256": "66ee0bcccf59d9344e6e2ac7fbf4d0659ccfe7c7e5679431c0f7bd5bfb5673fd"
+      }
+    ]
+  },
+  {
+    "model": "A1",
+    "kind": "clean",
+    "serial": true,
+    "replan_steps": 10,
+    "num_steps": 3,
+    "records": "results/episodes/A1_efficiency_R10_N3_20261027T120106Z.jsonl.gz",
+    "episodes": 100,
+    "successes": 100,
+    "original_record_sources": [
+      {
+        "path": "runs/A1_efficiency_R10_N3_20261027T120106Z/episodes/episodes.jsonl",
+        "sha256": "b92a109c0f573ee9bc16f8af8386ebfdbc45c2b768af743d06216fc26369f16f"
+      }
+    ]
+  }
+]

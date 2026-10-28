@@ -1,0 +1,50 @@
+{
+  "registered_at_utc": "2026-10-27T03:54:44.354648+00:00",
+  "status": "before_final_heldout_and_formal_training",
+  "primary_endpoint": {
+    "comparison": "A1 minus B1",
+    "split": "heldout",
+    "category": "Camera Viewpoints",
+    "measure": "paired absolute success-rate difference in percentage points",
+    "selection_basis": "Prior diagnostic210 outcomes and camera ablations only"
+  },
+  "secondary_endpoints": [
+    "A1-B1 overall heldout210",
+    "A1-Ref overall heldout210",
+    "per-category results, descriptive and without multiplicity-adjusted claims"
+  ],
+  "uncertainty": {
+    "method": "base-task cluster paired bootstrap",
+    "draws": 2000,
+    "seed": 0,
+    "interval": "two-sided95%",
+    "training_seed_variance": "Not measured; one training seed42"
+  },
+  "clean_retention": {
+    "margin_pp": -3,
+    "comparisons": [
+      "A1-B1",
+      "A1-Ref"
+    ],
+    "criterion_for_basic_retention_phrase": "Both paired differences and their95% cluster interval lower bounds >= -3pp. Otherwise show observed changes and state uncertainty or degradation.",
+    "scope": "Exploratory tolerance criterion, not a powered noninferiority trial"
+  },
+  "efficiency": {
+    "report_all_five_settings": true,
+    "separate_metrics": [
+      "GPU synchronized sampling latency",
+      "request latency",
+      "amortized action throughput",
+      "measured serial simulation feedback frequency"
+    ],
+    "frequency_claim": "Use measured simulator request-to-request cycles, identify R/N setting; never call R/latency closed-loop feedback frequency or claim physical robot Hz.",
+    "preferred_N_comparison": "R5,N3 versus R5,N10 changes only denoising steps; report paired success difference with interval."
+  },
+  "checkpoint_selection": "Always step4999 for planned5000steps; no heldout selection or tuning",
+  "limitations": [
+    "Fixed perturbation variants on the same40 base tasks",
+    "Small per-category sample30",
+    "Single training seed",
+    "Final clean Ref instrumentation repeat is kept separate from original400"
+  ]
+}

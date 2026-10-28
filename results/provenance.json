@@ -1,0 +1,19 @@
+{
+  "source_archive": "completed_study_20261027T120106Z.zip",
+  "source_archive_sha256": "9dbb9cc20b877eb24bda36314e98c29dbbc8210fda823cea8b6c1b95ce441784",
+  "episodes": 2330,
+  "jobs": 11,
+  "public_record_transform": "JSON reserialization, gzip compression, video path replaced with excluded_videos/basename; no other episode values changed.",
+  "excluded": [
+    "model weights",
+    "simulator assets",
+    "training datasets",
+    "full videos",
+    "credentials",
+    "SSH metadata",
+    "billing and authorization history"
+  ],
+  "checkpoint_availability": "Full trained checkpoints are retained on the original compute instance; they are not included in this code/results candidate.",
+  "github_published": false,
+  "created_at_utc": "2026-10-28T02:19:19.539105+00:00"
+}

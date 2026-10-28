@@ -1,0 +1,426 @@
+{
+  "selection_rule": "All five discordant camera pairs; all four R10/N10 failures; one success per efficiency setting; one clean failure per model; all three RGB-exception episodes.",
+  "sheets": [
+    {
+      "sheet": "camera_pair_00.jpg",
+      "selection": "All discordant camera pairs: B1 versus A1",
+      "clips": [
+        {
+          "model": "B1",
+          "pair_id": "plus/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_view_0_0_157_0_0_initstate_0/0",
+          "video_relative_path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_10/videos/eb34cb3ebe4e8aec9436.mp4",
+          "success": false,
+          "frames": 520,
+          "sampled_frames": [
+            0,
+            173,
+            346,
+            519
+          ],
+          "video_sha256": "f2b59b92e890b2f44501be9e7997d3cf344e89ff8c32ecc3c31cfd6b7639dfd2"
+        },
+        {
+          "model": "A1",
+          "pair_id": "plus/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_view_0_0_157_0_0_initstate_0/0",
+          "video_relative_path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_10/videos/eb34cb3ebe4e8aec9436.mp4",
+          "success": true,
+          "frames": 247,
+          "sampled_frames": [
+            0,
+            82,
+            164,
+            246
+          ],
+          "video_sha256": "ba4799a26be838499d66224673f6b50a8368fd16da75241492eada8f79d52adc"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "B1 holds the book near the caddy and times out; A1 transports it toward the rear compartment and records success. Sampled observations support a placement-progress difference."
+    },
+    {
+      "sheet": "camera_pair_01.jpg",
+      "selection": "All discordant camera pairs: B1 versus A1",
+      "clips": [
+        {
+          "model": "B1",
+          "pair_id": "plus/libero_goal/put_the_bowl_on_top_of_the_cabinet_view_68_0_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_goal/videos/7cc04bad8e6b5a2e0eae.mp4",
+          "success": true,
+          "frames": 174,
+          "sampled_frames": [
+            0,
+            58,
+            116,
+            173
+          ],
+          "video_sha256": "19479e4cbbd03ee5c0f7c32a8c87f29cd44ab3b633dc63346847ece7e1ff1fbf"
+        },
+        {
+          "model": "A1",
+          "pair_id": "plus/libero_goal/put_the_bowl_on_top_of_the_cabinet_view_68_0_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_goal/videos/7cc04bad8e6b5a2e0eae.mp4",
+          "success": false,
+          "frames": 300,
+          "sampled_frames": [
+            0,
+            100,
+            200,
+            299
+          ],
+          "video_sha256": "77ab94245064ead705499aa89d3170f394233dd6653e4f0530364af61ba6ff75"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "A1 manipulates the bowl near the cabinet but does not finish before the time limit. B1 terminates successfully. Sparse views do not establish the exact failed contact."
+    },
+    {
+      "sheet": "camera_pair_02.jpg",
+      "selection": "All discordant camera pairs: B1 versus A1",
+      "clips": [
+        {
+          "model": "B1",
+          "pair_id": "plus/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket_view_66_15_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_object/videos/c84c56395f5d3bda7790.mp4",
+          "success": true,
+          "frames": 238,
+          "sampled_frames": [
+            0,
+            79,
+            158,
+            237
+          ],
+          "video_sha256": "1437e0c74a650a206c32911c17c5f2699c40d53a34d9ba7b60d50d5638e62734"
+        },
+        {
+          "model": "A1",
+          "pair_id": "plus/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket_view_66_15_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_object/videos/c84c56395f5d3bda7790.mp4",
+          "success": false,
+          "frames": 280,
+          "sampled_frames": [
+            0,
+            93,
+            186,
+            279
+          ],
+          "video_sha256": "ca0a5d0ba7a2e1e971b70dbc9b59a33fad9ec53817d6a37ce1492ff30ab80241"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "Both trajectories reach the basket; A1 still holds the upright bottle in the late sample, while B1 has progressed toward release. A1 times out."
+    },
+    {
+      "sheet": "camera_pair_03.jpg",
+      "selection": "All discordant camera pairs: B1 versus A1",
+      "clips": [
+        {
+          "model": "B1",
+          "pair_id": "plus/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_294_0_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_spatial/videos/43896229ee023d223435.mp4",
+          "success": true,
+          "frames": 187,
+          "sampled_frames": [
+            0,
+            62,
+            124,
+            186
+          ],
+          "video_sha256": "8bd36ff773658aa85c6abc622ee41490891381c4d0d202b484cfc46e275a5b15"
+        },
+        {
+          "model": "A1",
+          "pair_id": "plus/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_294_0_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_spatial/videos/43896229ee023d223435.mp4",
+          "success": false,
+          "frames": 220,
+          "sampled_frames": [
+            0,
+            73,
+            146,
+            219
+          ],
+          "video_sha256": "555f768d98e1f6f9079d18d264ae3601ee2f2de819f12bf9b845da0aa3b41cce"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "A1 continues manipulation near the bowls and plate at timeout. B1 succeeds earlier. No object-attention mechanism is inferred from these sparse frames."
+    },
+    {
+      "sheet": "camera_pair_04.jpg",
+      "selection": "All discordant camera pairs: B1 versus A1",
+      "clips": [
+        {
+          "model": "B1",
+          "pair_id": "plus/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_296_15_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_spatial/videos/59037e3922ee1f7b01e3.mp4",
+          "success": true,
+          "frames": 115,
+          "sampled_frames": [
+            0,
+            38,
+            76,
+            114
+          ],
+          "video_sha256": "2606a0a3b39cddbf5cf9c08fd2fe01997f1d6d153189a5ed680d4f85fab19c82"
+        },
+        {
+          "model": "A1",
+          "pair_id": "plus/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_view_296_15_100_0_0_initstate_0/0",
+          "video_relative_path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_spatial/videos/59037e3922ee1f7b01e3.mp4",
+          "success": false,
+          "frames": 220,
+          "sampled_frames": [
+            0,
+            73,
+            146,
+            219
+          ],
+          "video_sha256": "8fae5aa6a0e6cb95f4d1e08162de606a075a5817780c1debc0fdd1335f6cf29b"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "A1 continues holding/manipulating the bowl near the plate at timeout; B1 completes earlier."
+    },
+    {
+      "sheet": "efficiency_failures.jpg",
+      "selection": "All four R10/N10 failures",
+      "clips": [
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate/5",
+          "video_relative_path": "runs/A1_efficiency_R10_N10_20261027T120106Z/episodes/videos/96a2f6040ba08c0b55be.mp4",
+          "success": false,
+          "frames": 220,
+          "sampled_frames": [
+            0,
+            110,
+            219
+          ],
+          "video_sha256": "8c398a217ff754c3b1be03f00c0cafa07176c4574b2c27b546b6008babd05a74"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/9",
+          "video_relative_path": "runs/A1_efficiency_R10_N10_20261027T120106Z/episodes/videos/ace8d4f214b0767a140d.mp4",
+          "success": false,
+          "frames": 220,
+          "sampled_frames": [
+            0,
+            110,
+            219
+          ],
+          "video_sha256": "c342f8bb11ae0f06aae9773b27dcd63cd1b6b03fde2503d9a28f894114e1cc8d"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate/7",
+          "video_relative_path": "runs/A1_efficiency_R10_N10_20261027T120106Z/episodes/videos/b47880152e9e422f8427.mp4",
+          "success": false,
+          "frames": 220,
+          "sampled_frames": [
+            0,
+            110,
+            219
+          ],
+          "video_sha256": "d8bba8098bbfc04f0e889e0273d3d66d1321ebdf3d13d99dd2579aab6f68c23b"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate/7",
+          "video_relative_path": "runs/A1_efficiency_R10_N10_20261027T120106Z/episodes/videos/181789f25142480e920a.mp4",
+          "success": false,
+          "frames": 220,
+          "sampled_frames": [
+            0,
+            110,
+            219
+          ],
+          "video_sha256": "88784505baf93a1e32250f677b85e00f544e3e28c6edddc39856f4673c85505f"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "All four registered R10/N10 failures show continued reaching, grasping or placement near the target at the time limit. No unexpected blank, flipped or broken camera stream is visible."
+    },
+    {
+      "sheet": "efficiency_success_samples.jpg",
+      "selection": "One successful episode per efficiency setting",
+      "clips": [
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/0",
+          "video_relative_path": "runs/A1_efficiency_R1_N10_20261027T120106Z/episodes/videos/171d9bd2064b4f4c0330.mp4",
+          "success": true,
+          "frames": 82,
+          "sampled_frames": [
+            0,
+            41,
+            81
+          ],
+          "video_sha256": "42a6809e9979da59b9769d67b6e67df56153a50c29c4740f7e029d44d86387bc"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/0",
+          "video_relative_path": "runs/A1_efficiency_R5_N10_20261027T120106Z/episodes/videos/171d9bd2064b4f4c0330.mp4",
+          "success": true,
+          "frames": 78,
+          "sampled_frames": [
+            0,
+            39,
+            77
+          ],
+          "video_sha256": "5beaa22e2810a3fa54c873b91af27e8985b3e0aae7edcaf8d5cdcd9db3e322a3"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/0",
+          "video_relative_path": "runs/A1_efficiency_R10_N10_20261027T120106Z/episodes/videos/171d9bd2064b4f4c0330.mp4",
+          "success": true,
+          "frames": 81,
+          "sampled_frames": [
+            0,
+            40,
+            80
+          ],
+          "video_sha256": "b9e88cbc75c15cf189114e0dd6359b8ea43a7555fdacfcc773b58e12dfd0d4c4"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/0",
+          "video_relative_path": "runs/A1_efficiency_R5_N3_20261027T120106Z/episodes/videos/171d9bd2064b4f4c0330.mp4",
+          "success": true,
+          "frames": 81,
+          "sampled_frames": [
+            0,
+            40,
+            80
+          ],
+          "video_sha256": "a1cf2c9b09ef61165a96f205e573e62cd6b54b7410bc2d0fea5cbf106f1622d5"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/0",
+          "video_relative_path": "runs/A1_efficiency_R10_N3_20261027T120106Z/episodes/videos/171d9bd2064b4f4c0330.mp4",
+          "success": true,
+          "frames": 80,
+          "sampled_frames": [
+            0,
+            40,
+            79
+          ],
+          "video_sha256": "83dafdab18f0b4de34c0dfd0dd98af05aed8d98cc5871d2ed2d0495aaf00e123"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "All five settings show bowl transport toward the plate in the selected matched successful task. The terminal success signal follows the last recorded pre-action observation."
+    },
+    {
+      "sheet": "clean_failure_samples.jpg",
+      "selection": "One clean failure per model",
+      "clips": [
+        {
+          "model": "Ref",
+          "pair_id": "clean/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/2",
+          "video_relative_path": "runs/Ref_clean_R5_N10_20261027T120106Z/episodes/libero_10/videos/62d67aa5781ff2b6a2fe.mp4",
+          "success": false,
+          "frames": 520,
+          "sampled_frames": [
+            0,
+            260,
+            519
+          ],
+          "video_sha256": "3045c8eacb73d7d6ec0b9a9596d4999f95fcfa77da53456015eb5bc027e88b0b"
+        },
+        {
+          "model": "B1",
+          "pair_id": "clean/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/4",
+          "video_relative_path": "runs/B1_clean_R5_N10_20261027T120106Z/episodes/libero_10/videos/83b16e0cc393e095f538.mp4",
+          "success": false,
+          "frames": 520,
+          "sampled_frames": [
+            0,
+            260,
+            519
+          ],
+          "video_sha256": "f62012d45af244aef4b2e60f4701b4e73bf47e14b346eb60e3336e4db81ca1a5"
+        },
+        {
+          "model": "A1",
+          "pair_id": "clean/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/0",
+          "video_relative_path": "runs/A1_clean_R5_N10_20261027T120106Z/episodes/libero_10/videos/86954d49a89fc4a4d998.mp4",
+          "success": false,
+          "frames": 520,
+          "sampled_frames": [
+            0,
+            260,
+            519
+          ],
+          "video_sha256": "820bb9f1a2a60b4abaf49fc10517093fb999d841c0dc23c57830e0d6bf17d124"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "Long-horizon samples show unfinished object placement/transport at timeout for each model. Partial progress must not be counted as complete task success."
+    },
+    {
+      "sheet": "rgb_exception_samples.jpg",
+      "selection": "Audited initial RGB exception; all three scored successes retained",
+      "clips": [
+        {
+          "model": "Ref",
+          "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+          "video_relative_path": "runs/Ref_plus_R5_N10_20261027T120106Z/episodes/libero_10/videos/97d5b48fb3b51c21e281.mp4",
+          "success": true,
+          "frames": 257,
+          "sampled_frames": [
+            0,
+            128,
+            256
+          ],
+          "video_sha256": "744734b9cff574055b3e7d7a3647311359a7bbc940787b86df64988ed5a9a72f"
+        },
+        {
+          "model": "B1",
+          "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+          "video_relative_path": "runs/B1_plus_R5_N10_20261027T120106Z/episodes/libero_10/videos/97d5b48fb3b51c21e281.mp4",
+          "success": true,
+          "frames": 244,
+          "sampled_frames": [
+            0,
+            122,
+            243
+          ],
+          "video_sha256": "f030682196da99d15239457e00e9e739a1c2c68573dc95d37cd10414bbec8a43"
+        },
+        {
+          "model": "A1",
+          "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+          "video_relative_path": "runs/A1_plus_R5_N10_20261027T120106Z/episodes/libero_10/videos/97d5b48fb3b51c21e281.mp4",
+          "success": true,
+          "frames": 265,
+          "sampled_frames": [
+            0,
+            132,
+            264
+          ],
+          "video_sha256": "4183d56fc1a050e6c8dd301c53b44136aa6a68fd543ad5a86eab0b68793784a9"
+        }
+      ],
+      "manual_review": "reviewed_sampled_frames",
+      "review_notes": "All three lighting-exception trajectories show mug transport into the microwave region and recorded success. A one-level initial RGB difference cannot be diagnosed from JPEG contact sheets; the separate NPZ/hash audit verifies its scope."
+    }
+  ],
+  "clip_selections": 25,
+  "scope": "Frame sampling and video decode checks; outcome flags remain based on official done signals. Original videos record pre-action observations and do not include a separate final post-action frame.",
+  "reviewed_at_utc": "2026-10-28T02:19:19.539105+00:00",
+  "selected_clips": 25,
+  "sampled_frames": 85,
+  "review_scope": "85 sampled frames from 25 decoded clips, not full playback of every trajectory.",
+  "terminal_frame_limitation": "Videos contain pre-action observations. Official simulator done signals establish outcomes; the final post-action frame is not separately recorded.",
+  "outcome_changes": 0,
+  "visual_stream_anomalies_observed": 0,
+  "publication_figures_reviewed": [
+    "robustness",
+    "training_loss",
+    "efficiency"
+  ]
+}

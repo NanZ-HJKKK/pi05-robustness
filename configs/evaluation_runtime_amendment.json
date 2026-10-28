@@ -1,0 +1,12 @@
+{
+  "registered_at_utc": "2026-10-27T12:01:06.582476+00:00",
+  "before_any_final_heldout_outcomes": true,
+  "training_changed": false,
+  "reason": "Controlled fixed-input tests reproduce cross-compilation drift and eliminate it by persisting autotuning decisions; old/current source variants then match native action bytes.",
+  "old_exact_bridge_passed": false,
+  "old_bridge_preserved": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/Ref_clean_R5_N10_20261027T040204Z/baseline_equivalence.json",
+  "new_execution_rule": "All scored servers require complete pre-calibrated autotune decisions, selected without task outcomes. Fresh common Ref400, followed by original B1/A1 clean/heldout and five efficiency jobs. Initial identities still checked exactly.",
+  "inference_registration_sha256": "1c34167ed0417d2f9a625ea73db8806c17565ec3fb0abfb7a852bc94854f725d",
+  "original_analysis_endpoints_unchanged": true,
+  "historical_reference_runs_never_pooled": true
+}

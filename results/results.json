@@ -1,0 +1,2738 @@
+{
+  "status": "remote_audit_passed_pending_local_archive_acceptance",
+  "coverage": [
+    {
+      "model": "Ref",
+      "kind": "clean",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/Ref_clean_R5_N10_20261027T120106Z",
+      "episodes": 400,
+      "successes": 384
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/Ref_plus_R5_N10_20261027T120106Z",
+      "episodes": 210,
+      "successes": 173
+    },
+    {
+      "model": "B1",
+      "kind": "clean",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/B1_clean_R5_N10_20261027T120106Z",
+      "episodes": 400,
+      "successes": 390
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/B1_plus_R5_N10_20261027T120106Z",
+      "episodes": 210,
+      "successes": 179
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_clean_R5_N10_20261027T120106Z",
+      "episodes": 400,
+      "successes": 389
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "serial": false,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_plus_R5_N10_20261027T120106Z",
+      "episodes": 210,
+      "successes": 179
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 1,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R1_N10_20261027T120106Z",
+      "episodes": 100,
+      "successes": 99
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 5,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R5_N10_20261027T120106Z",
+      "episodes": 100,
+      "successes": 99
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 10,
+      "num_steps": 10,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R10_N10_20261027T120106Z",
+      "episodes": 100,
+      "successes": 96
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 5,
+      "num_steps": 3,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R5_N3_20261027T120106Z",
+      "episodes": 100,
+      "successes": 99
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "serial": true,
+      "replan_steps": 10,
+      "num_steps": 3,
+      "out": "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/A1_efficiency_R10_N3_20261027T120106Z",
+      "episodes": 100,
+      "successes": 100
+    }
+  ],
+  "quality": [
+    {
+      "model": "Ref",
+      "kind": "clean",
+      "group": "overall",
+      "episodes": 400,
+      "tasks": 40,
+      "successes": 384,
+      "success_rate": 0.96,
+      "wilson_95": [
+        0.9360177522821589,
+        0.9752309369302883
+      ],
+      "task_macro_success_rate": 0.96,
+      "measured_requests_after_warmup": 13025,
+      "median_sampling_ms": 69.0455436706543,
+      "median_policy_wall_ms": 81.90439827740192,
+      "median_request_wall_ms": 102.29535214602947,
+      "amortized_action_throughput_hz": 72.41596972354782,
+      "request_amortized_action_throughput_hz": 48.87807603284224,
+      "simulation_actions_per_wall_second_including_setup_and_video": 13.637203511492153,
+      "feedback_intervals_after_warmup": 12625,
+      "median_simulation_feedback_period_ms": 269.50494199991226,
+      "median_simulation_feedback_hz": 3.710507097121527,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 396,
+      "simulation_actions_per_control_second_without_warmup": 17.886479708520657
+    },
+    {
+      "model": "Ref",
+      "kind": "clean",
+      "group": "libero_10",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 91,
+      "success_rate": 0.91,
+      "wilson_95": [
+        0.837737871472837,
+        0.9519274599974348
+      ],
+      "task_macro_success_rate": 0.91,
+      "measured_requests_after_warmup": 5493,
+      "median_sampling_ms": 70.69634087383747,
+      "median_policy_wall_ms": 83.2156129181385,
+      "median_request_wall_ms": 89.13345448672771,
+      "amortized_action_throughput_hz": 70.72501827107074,
+      "request_amortized_action_throughput_hz": 56.0956604766678,
+      "simulation_actions_per_wall_second_including_setup_and_video": 16.154335738396693,
+      "feedback_intervals_after_warmup": 5393,
+      "median_simulation_feedback_period_ms": 237.74977773427963,
+      "median_simulation_feedback_hz": 4.206102775488805,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 19.61072548510732
+    },
+    {
+      "model": "Ref",
+      "kind": "clean",
+      "group": "libero_goal",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 98,
+      "success_rate": 0.98,
+      "wilson_95": [
+        0.929988209271456,
+        0.9944980324498376
+      ],
+      "task_macro_success_rate": 0.98,
+      "measured_requests_after_warmup": 2325,
+      "median_sampling_ms": 68.87499988079071,
+      "median_policy_wall_ms": 81.20518177747726,
+      "median_request_wall_ms": 126.61827728152275,
+      "amortized_action_throughput_hz": 72.59528143236344,
+      "request_amortized_action_throughput_hz": 39.488769768072366,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.183426657289827,
+      "feedback_intervals_after_warmup": 2225,
+      "median_simulation_feedback_period_ms": 290.6155548989773,
+      "median_simulation_feedback_hz": 3.4409720441413274,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 16.695825488503377
+    },
+    {
+      "model": "Ref",
+      "kind": "clean",
+      "group": "libero_object",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 96,
+      "success_rate": 0.96,
+      "wilson_95": [
+        0.9016292856411208,
+        0.9843366960084523
+      ],
+      "task_macro_success_rate": 0.96,
+      "measured_requests_after_warmup": 3019,
+      "median_sampling_ms": 68.80791112780571,
+      "median_policy_wall_ms": 81.24251291155815,
+      "median_request_wall_ms": 119.68675628304482,
+      "amortized_action_throughput_hz": 72.66606292861968,
+      "request_amortized_action_throughput_hz": 41.77571650597331,
+      "simulation_actions_per_wall_second_including_setup_and_video": 13.394527713775748,
+      "feedback_intervals_after_warmup": 2919,
+      "median_simulation_feedback_period_ms": 272.0404341816902,
+      "median_simulation_feedback_hz": 3.6759241434386203,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 17.617841274661192
+    },
+    {
+      "model": "Ref",
+      "kind": "clean",
+      "group": "libero_spatial",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 99,
+      "success_rate": 0.99,
+      "wilson_95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "task_macro_success_rate": 0.99,
+      "measured_requests_after_warmup": 2188,
+      "median_sampling_ms": 68.83593741804361,
+      "median_policy_wall_ms": 81.15364890545607,
+      "median_request_wall_ms": 103.7258543074131,
+      "amortized_action_throughput_hz": 72.63647721734048,
+      "request_amortized_action_throughput_hz": 48.20398957796445,
+      "simulation_actions_per_wall_second_including_setup_and_video": 10.957119926061237,
+      "feedback_intervals_after_warmup": 2088,
+      "median_simulation_feedback_period_ms": 309.71002485603094,
+      "median_simulation_feedback_hz": 3.228826708030685,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 15.876538018577438
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "overall",
+      "episodes": 210,
+      "tasks": 210,
+      "successes": 173,
+      "success_rate": 0.8238095238095238,
+      "wilson_95": [
+        0.766599288020518,
+        0.8693858981544224
+      ],
+      "task_macro_success_rate": 0.8238095238095238,
+      "measured_requests_after_warmup": 8009,
+      "median_sampling_ms": 68.73809173703194,
+      "median_policy_wall_ms": 81.21125027537346,
+      "median_request_wall_ms": 108.6037140339613,
+      "amortized_action_throughput_hz": 72.73987208036358,
+      "request_amortized_action_throughput_hz": 46.0389411584622,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.060152175264891,
+      "feedback_intervals_after_warmup": 7799,
+      "median_simulation_feedback_period_ms": 286.2403281033039,
+      "median_simulation_feedback_hz": 3.4935678233260714,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 206,
+      "simulation_actions_per_control_second_without_warmup": 13.978413265483344
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "Background Textures",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "task_macro_success_rate": 1,
+      "measured_requests_after_warmup": 1064,
+      "median_sampling_ms": 68.7989117577672,
+      "median_policy_wall_ms": 81.20771776884794,
+      "median_request_wall_ms": 140.42227808386087,
+      "amortized_action_throughput_hz": 72.67556814858361,
+      "request_amortized_action_throughput_hz": 35.60688566107705,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.37320005824934,
+      "feedback_intervals_after_warmup": 1034,
+      "median_simulation_feedback_period_ms": 312.34732270240784,
+      "median_simulation_feedback_hz": 3.201564179734495,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 26,
+      "simulation_actions_per_control_second_without_warmup": 16.669222047957057
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "Camera Viewpoints",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 22,
+      "success_rate": 0.7333333333333333,
+      "wilson_95": [
+        0.555520383048111,
+        0.8581733668040368
+      ],
+      "task_macro_success_rate": 0.7333333333333333,
+      "measured_requests_after_warmup": 1233,
+      "median_sampling_ms": 68.81213560700417,
+      "median_policy_wall_ms": 80.74887283146381,
+      "median_request_wall_ms": 136.0556874424219,
+      "amortized_action_throughput_hz": 72.66160185109945,
+      "request_amortized_action_throughput_hz": 36.74965812888914,
+      "simulation_actions_per_wall_second_including_setup_and_video": 13.561276832994709,
+      "feedback_intervals_after_warmup": 1203,
+      "median_simulation_feedback_period_ms": 300.8423801511526,
+      "median_simulation_feedback_hz": 3.3239997619270554,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 16.63512114352163
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "Language Instructions",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 22,
+      "success_rate": 0.7333333333333333,
+      "wilson_95": [
+        0.555520383048111,
+        0.8581733668040368
+      ],
+      "task_macro_success_rate": 0.7333333333333333,
+      "measured_requests_after_warmup": 1107,
+      "median_sampling_ms": 68.84582713246346,
+      "median_policy_wall_ms": 80.67947067320347,
+      "median_request_wall_ms": 135.62985695898533,
+      "amortized_action_throughput_hz": 72.6260429754109,
+      "request_amortized_action_throughput_hz": 36.86503924804704,
+      "simulation_actions_per_wall_second_including_setup_and_video": 13.456490182631027,
+      "feedback_intervals_after_warmup": 1077,
+      "median_simulation_feedback_period_ms": 297.9270815849304,
+      "median_simulation_feedback_hz": 3.3565260152925336,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 16.843238553240834
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "Light Conditions",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 27,
+      "success_rate": 0.9,
+      "wilson_95": [
+        0.7437891742081593,
+        0.9654001112526658
+      ],
+      "task_macro_success_rate": 0.9,
+      "measured_requests_after_warmup": 958,
+      "median_sampling_ms": 68.92779376357794,
+      "median_policy_wall_ms": 80.96126187592745,
+      "median_request_wall_ms": 128.58096789568663,
+      "amortized_action_throughput_hz": 72.53967850980376,
+      "request_amortized_action_throughput_hz": 38.886003751786426,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.89189292872956,
+      "feedback_intervals_after_warmup": 928,
+      "median_simulation_feedback_period_ms": 290.30838795006275,
+      "median_simulation_feedback_hz": 3.444612837614649,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 16.763322092824577
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "Objects Layout",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 25,
+      "success_rate": 0.8333333333333334,
+      "wilson_95": [
+        0.6643564949358398,
+        0.9266345762815145
+      ],
+      "task_macro_success_rate": 0.8333333333333334,
+      "measured_requests_after_warmup": 1204,
+      "median_sampling_ms": 68.60440596938133,
+      "median_policy_wall_ms": 81.17874432355165,
+      "median_request_wall_ms": 94.16077751666307,
+      "amortized_action_throughput_hz": 72.88161641151062,
+      "request_amortized_action_throughput_hz": 53.10066602960218,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.912341665217767,
+      "feedback_intervals_after_warmup": 1174,
+      "median_simulation_feedback_period_ms": 273.660927079618,
+      "median_simulation_feedback_hz": 3.654157028084113,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 17.373928240613832
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "Robot Initial States",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 20,
+      "success_rate": 0.6666666666666666,
+      "wilson_95": [
+        0.4878005164454384,
+        0.8076950191632386
+      ],
+      "task_macro_success_rate": 0.6666666666666666,
+      "measured_requests_after_warmup": 1360,
+      "median_sampling_ms": 68.12818814069033,
+      "median_policy_wall_ms": 81.19452837854624,
+      "median_request_wall_ms": 86.83328982442617,
+      "amortized_action_throughput_hz": 73.39106082895655,
+      "request_amortized_action_throughput_hz": 57.581602748321785,
+      "simulation_actions_per_wall_second_including_setup_and_video": 15.497658640514656,
+      "feedback_intervals_after_warmup": 1330,
+      "median_simulation_feedback_period_ms": 251.8284898251295,
+      "median_simulation_feedback_hz": 3.9709565851520736,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 19.09335118450654
+    },
+    {
+      "model": "Ref",
+      "kind": "plus",
+      "group": "Sensor Noise",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 27,
+      "success_rate": 0.9,
+      "wilson_95": [
+        0.7437891742081593,
+        0.9654001112526658
+      ],
+      "task_macro_success_rate": 0.9,
+      "measured_requests_after_warmup": 1083,
+      "median_sampling_ms": 69.23184730112553,
+      "median_policy_wall_ms": 83.39918963611126,
+      "median_request_wall_ms": 87.74768561124802,
+      "amortized_action_throughput_hz": 72.2210975860919,
+      "request_amortized_action_throughput_hz": 56.98155985733566,
+      "simulation_actions_per_wall_second_including_setup_and_video": 5.572867937372036,
+      "feedback_intervals_after_warmup": 1053,
+      "median_simulation_feedback_period_ms": 359.99291203916073,
+      "median_simulation_feedback_hz": 2.7778324699104577,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 6.350635754423035
+    },
+    {
+      "model": "B1",
+      "kind": "clean",
+      "group": "overall",
+      "episodes": 400,
+      "tasks": 40,
+      "successes": 390,
+      "success_rate": 0.975,
+      "wilson_95": [
+        0.9545984121283544,
+        0.986364908254064
+      ],
+      "task_macro_success_rate": 0.975,
+      "measured_requests_after_warmup": 12641,
+      "median_sampling_ms": 79.73079197108746,
+      "median_policy_wall_ms": 92.8701963275671,
+      "median_request_wall_ms": 128.6305170506239,
+      "amortized_action_throughput_hz": 62.71102890603589,
+      "request_amortized_action_throughput_hz": 38.871024657641684,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.455002037414053,
+      "feedback_intervals_after_warmup": 12241,
+      "median_simulation_feedback_period_ms": 292.13472828269005,
+      "median_simulation_feedback_hz": 3.4230781320608,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 396,
+      "simulation_actions_per_control_second_without_warmup": 16.276354671707157
+    },
+    {
+      "model": "B1",
+      "kind": "clean",
+      "group": "libero_10",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 96,
+      "success_rate": 0.96,
+      "wilson_95": [
+        0.9016292856411208,
+        0.9843366960084523
+      ],
+      "task_macro_success_rate": 0.96,
+      "measured_requests_after_warmup": 5334,
+      "median_sampling_ms": 80.39266709238291,
+      "median_policy_wall_ms": 93.8610378652811,
+      "median_request_wall_ms": 101.52307245880365,
+      "amortized_action_throughput_hz": 62.19472721628044,
+      "request_amortized_action_throughput_hz": 49.24988851208099,
+      "simulation_actions_per_wall_second_including_setup_and_video": 14.931212685219377,
+      "feedback_intervals_after_warmup": 5234,
+      "median_simulation_feedback_period_ms": 251.48380547761917,
+      "median_simulation_feedback_hz": 3.9763991884121346,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 18.05768574049126
+    },
+    {
+      "model": "B1",
+      "kind": "clean",
+      "group": "libero_goal",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 95,
+      "success_rate": 0.95,
+      "wilson_95": [
+        0.8882495307680808,
+        0.9784563208456319
+      ],
+      "task_macro_success_rate": 0.95,
+      "measured_requests_after_warmup": 2334,
+      "median_sampling_ms": 79.54496704041958,
+      "median_policy_wall_ms": 92.27116405963898,
+      "median_request_wall_ms": 153.7677189335227,
+      "amortized_action_throughput_hz": 62.85752808797224,
+      "request_amortized_action_throughput_hz": 32.516577827116066,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.08353855462343,
+      "feedback_intervals_after_warmup": 2234,
+      "median_simulation_feedback_period_ms": 315.7318029552698,
+      "median_simulation_feedback_hz": 3.1672450815531925,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 15.077061448192229
+    },
+    {
+      "model": "B1",
+      "kind": "clean",
+      "group": "libero_object",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 99,
+      "success_rate": 0.99,
+      "wilson_95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "task_macro_success_rate": 0.99,
+      "measured_requests_after_warmup": 2834,
+      "median_sampling_ms": 79.5031851157546,
+      "median_policy_wall_ms": 92.39885117858648,
+      "median_request_wall_ms": 146.38148061931133,
+      "amortized_action_throughput_hz": 62.890562091570644,
+      "request_amortized_action_throughput_hz": 34.1573263150911,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.05616265213265,
+      "feedback_intervals_after_warmup": 2734,
+      "median_simulation_feedback_period_ms": 296.97601962834597,
+      "median_simulation_feedback_hz": 3.367275247514804,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 15.875327085275584
+    },
+    {
+      "model": "B1",
+      "kind": "clean",
+      "group": "libero_spatial",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 100,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.9630065017930143,
+        1
+      ],
+      "task_macro_success_rate": 1,
+      "measured_requests_after_warmup": 2139,
+      "median_sampling_ms": 79.51007969677448,
+      "median_policy_wall_ms": 92.5122108310461,
+      "median_request_wall_ms": 132.51874782145023,
+      "amortized_action_throughput_hz": 62.88510864368857,
+      "request_amortized_action_throughput_hz": 37.73051045378707,
+      "simulation_actions_per_wall_second_including_setup_and_video": 10.055982101917383,
+      "feedback_intervals_after_warmup": 2039,
+      "median_simulation_feedback_period_ms": 342.1931378543377,
+      "median_simulation_feedback_hz": 2.9223262812057698,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 14.434773444266304
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "overall",
+      "episodes": 210,
+      "tasks": 210,
+      "successes": 179,
+      "success_rate": 0.8523809523809524,
+      "wilson_95": [
+        0.7980877997820787,
+        0.894013726349474
+      ],
+      "task_macro_success_rate": 0.8523809523809524,
+      "measured_requests_after_warmup": 7779,
+      "median_sampling_ms": 79.53446544706821,
+      "median_policy_wall_ms": 92.06303581595421,
+      "median_request_wall_ms": 135.4121807962656,
+      "amortized_action_throughput_hz": 62.8658276873389,
+      "request_amortized_action_throughput_hz": 36.924300093229796,
+      "simulation_actions_per_wall_second_including_setup_and_video": 10.594630525103247,
+      "feedback_intervals_after_warmup": 7569,
+      "median_simulation_feedback_period_ms": 303.6316856741905,
+      "median_simulation_feedback_hz": 3.293463914280151,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 206,
+      "simulation_actions_per_control_second_without_warmup": 13.333794039307996
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "Background Textures",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 28,
+      "success_rate": 0.9333333333333333,
+      "wilson_95": [
+        0.7867654163738308,
+        0.9815229762087295
+      ],
+      "task_macro_success_rate": 0.9333333333333333,
+      "measured_requests_after_warmup": 1118,
+      "median_sampling_ms": 79.46606073528528,
+      "median_policy_wall_ms": 92.28270221501589,
+      "median_request_wall_ms": 173.50267805159092,
+      "amortized_action_throughput_hz": 62.91994285026705,
+      "request_amortized_action_throughput_hz": 28.817998985083406,
+      "simulation_actions_per_wall_second_including_setup_and_video": 10.741633944895266,
+      "feedback_intervals_after_warmup": 1088,
+      "median_simulation_feedback_period_ms": 346.24505415558815,
+      "median_simulation_feedback_hz": 2.8881278966966604,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 26,
+      "simulation_actions_per_control_second_without_warmup": 15.108704692371255
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "Camera Viewpoints",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 24,
+      "success_rate": 0.8,
+      "wilson_95": [
+        0.6269430358685175,
+        0.9049489282271013
+      ],
+      "task_macro_success_rate": 0.8,
+      "measured_requests_after_warmup": 1207,
+      "median_sampling_ms": 79.67887073755264,
+      "median_policy_wall_ms": 92.01023168861866,
+      "median_request_wall_ms": 170.83423398435116,
+      "amortized_action_throughput_hz": 62.75189336542016,
+      "request_amortized_action_throughput_hz": 29.26813837827149,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.414192971772962,
+      "feedback_intervals_after_warmup": 1177,
+      "median_simulation_feedback_period_ms": 330.2738834172487,
+      "median_simulation_feedback_hz": 3.0277901166549657,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 15.070552727948927
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "Language Instructions",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 23,
+      "success_rate": 0.7666666666666667,
+      "wilson_95": [
+        0.5907167384187784,
+        0.8820761185551049
+      ],
+      "task_macro_success_rate": 0.7666666666666667,
+      "measured_requests_after_warmup": 1067,
+      "median_sampling_ms": 79.64154705405235,
+      "median_policy_wall_ms": 92.12602488696575,
+      "median_request_wall_ms": 161.0848717391491,
+      "amortized_action_throughput_hz": 62.781301782178126,
+      "request_amortized_action_throughput_hz": 31.03953801507004,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.340032632754312,
+      "feedback_intervals_after_warmup": 1037,
+      "median_simulation_feedback_period_ms": 312.57788464426994,
+      "median_simulation_feedback_hz": 3.19920265996442,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 15.233539868783145
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "Light Conditions",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 29,
+      "success_rate": 0.9666666666666667,
+      "wilson_95": [
+        0.8332960900859082,
+        0.9940914096183874
+      ],
+      "task_macro_success_rate": 0.9666666666666667,
+      "measured_requests_after_warmup": 926,
+      "median_sampling_ms": 79.6612985432148,
+      "median_policy_wall_ms": 92.39465091377497,
+      "median_request_wall_ms": 158.84616505354643,
+      "amortized_action_throughput_hz": 62.7657355759471,
+      "request_amortized_action_throughput_hz": 31.47699535783265,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.790485946837707,
+      "feedback_intervals_after_warmup": 896,
+      "median_simulation_feedback_period_ms": 312.08518240600824,
+      "median_simulation_feedback_hz": 3.2042533781659865,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 15.094334214562384
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "Objects Layout",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 24,
+      "success_rate": 0.8,
+      "wilson_95": [
+        0.6269430358685175,
+        0.9049489282271013
+      ],
+      "task_macro_success_rate": 0.8,
+      "measured_requests_after_warmup": 1153,
+      "median_sampling_ms": 79.03141528367996,
+      "median_policy_wall_ms": 91.26908890902996,
+      "median_request_wall_ms": 115.28212018311024,
+      "amortized_action_throughput_hz": 63.26598077552716,
+      "request_amortized_action_throughput_hz": 43.371860198772964,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.256486297089378,
+      "feedback_intervals_after_warmup": 1123,
+      "median_simulation_feedback_period_ms": 289.10259529948235,
+      "median_simulation_feedback_hz": 3.4589796710890703,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 16.347803302433384
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "Robot Initial States",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 21,
+      "success_rate": 0.7,
+      "wilson_95": [
+        0.5212421254128504,
+        0.8333525173175619
+      ],
+      "task_macro_success_rate": 0.7,
+      "measured_requests_after_warmup": 1364,
+      "median_sampling_ms": 79.53350897878408,
+      "median_policy_wall_ms": 92.0563843101263,
+      "median_request_wall_ms": 98.96541014313698,
+      "amortized_action_throughput_hz": 62.866583710443,
+      "request_amortized_action_throughput_hz": 50.52270275814886,
+      "simulation_actions_per_wall_second_including_setup_and_video": 14.846418619903183,
+      "feedback_intervals_after_warmup": 1334,
+      "median_simulation_feedback_period_ms": 268.01956444978714,
+      "median_simulation_feedback_hz": 3.7310709091438277,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 17.94616624237091
+    },
+    {
+      "model": "B1",
+      "kind": "plus",
+      "group": "Sensor Noise",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "task_macro_success_rate": 1,
+      "measured_requests_after_warmup": 944,
+      "median_sampling_ms": 79.32023890316486,
+      "median_policy_wall_ms": 92.7140275016427,
+      "median_request_wall_ms": 97.32150658965111,
+      "amortized_action_throughput_hz": 63.03561448048666,
+      "request_amortized_action_throughput_hz": 51.376105603072176,
+      "simulation_actions_per_wall_second_including_setup_and_video": 5.429867624943272,
+      "feedback_intervals_after_warmup": 914,
+      "median_simulation_feedback_period_ms": 397.19699416309595,
+      "median_simulation_feedback_hz": 2.517642415967989,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 6.267450688672807
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "group": "overall",
+      "episodes": 400,
+      "tasks": 40,
+      "successes": 389,
+      "success_rate": 0.9725,
+      "wilson_95": [
+        0.9514345181143852,
+        0.9845763637397046
+      ],
+      "task_macro_success_rate": 0.9725,
+      "measured_requests_after_warmup": 12736,
+      "median_sampling_ms": 79.7027749940753,
+      "median_policy_wall_ms": 92.38273277878761,
+      "median_request_wall_ms": 127.04172357916832,
+      "amortized_action_throughput_hz": 62.733072974832744,
+      "request_amortized_action_throughput_hz": 39.35714865269567,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.704322324116188,
+      "feedback_intervals_after_warmup": 12336,
+      "median_simulation_feedback_period_ms": 287.5322923064232,
+      "median_simulation_feedback_hz": 3.4778702314740353,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 396,
+      "simulation_actions_per_control_second_without_warmup": 16.546377075048774
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "group": "libero_10",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 93,
+      "success_rate": 0.93,
+      "wilson_95": [
+        0.8625048526092651,
+        0.9656807389327273
+      ],
+      "task_macro_success_rate": 0.93,
+      "measured_requests_after_warmup": 5536,
+      "median_sampling_ms": 80.28768841177225,
+      "median_policy_wall_ms": 93.60621403902769,
+      "median_request_wall_ms": 99.67593848705292,
+      "amortized_action_throughput_hz": 62.27604878043631,
+      "request_amortized_action_throughput_hz": 50.16255754290649,
+      "simulation_actions_per_wall_second_including_setup_and_video": 15.45728789785625,
+      "feedback_intervals_after_warmup": 5436,
+      "median_simulation_feedback_period_ms": 244.17666718363762,
+      "median_simulation_feedback_hz": 4.095395401756104,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 18.52151753758557
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "group": "libero_goal",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 98,
+      "success_rate": 0.98,
+      "wilson_95": [
+        0.929988209271456,
+        0.9944980324498376
+      ],
+      "task_macro_success_rate": 0.98,
+      "measured_requests_after_warmup": 2259,
+      "median_sampling_ms": 79.44866083562374,
+      "median_policy_wall_ms": 91.44687280058861,
+      "median_request_wall_ms": 152.33952924609184,
+      "amortized_action_throughput_hz": 62.93372282693109,
+      "request_amortized_action_throughput_hz": 32.82142215316233,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.123145535311648,
+      "feedback_intervals_after_warmup": 2159,
+      "median_simulation_feedback_period_ms": 313.18933703005314,
+      "median_simulation_feedback_hz": 3.1929567254201943,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 15.214444876233744
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "group": "libero_object",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 99,
+      "success_rate": 0.99,
+      "wilson_95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "task_macro_success_rate": 0.99,
+      "measured_requests_after_warmup": 2784,
+      "median_sampling_ms": 79.48681432753801,
+      "median_policy_wall_ms": 91.6547467932105,
+      "median_request_wall_ms": 148.06577563285828,
+      "amortized_action_throughput_hz": 62.903514781668164,
+      "request_amortized_action_throughput_hz": 33.768775928327464,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.104080574695082,
+      "feedback_intervals_after_warmup": 2684,
+      "median_simulation_feedback_period_ms": 294.54684164375067,
+      "median_simulation_feedback_hz": 3.3950457401593286,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 15.990362468314322
+    },
+    {
+      "model": "A1",
+      "kind": "clean",
+      "group": "libero_spatial",
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 99,
+      "success_rate": 0.99,
+      "wilson_95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "task_macro_success_rate": 0.99,
+      "measured_requests_after_warmup": 2157,
+      "median_sampling_ms": 79.50920797884464,
+      "median_policy_wall_ms": 91.73338301479816,
+      "median_request_wall_ms": 130.69926761090755,
+      "amortized_action_throughput_hz": 62.88579809938959,
+      "request_amortized_action_throughput_hz": 38.25576142388975,
+      "simulation_actions_per_wall_second_including_setup_and_video": 10.164944167525283,
+      "feedback_intervals_after_warmup": 2057,
+      "median_simulation_feedback_period_ms": 334.1594245284796,
+      "median_simulation_feedback_hz": 2.992583559212984,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 14.541931312726316
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "overall",
+      "episodes": 210,
+      "tasks": 210,
+      "successes": 179,
+      "success_rate": 0.8523809523809524,
+      "wilson_95": [
+        0.7980877997820787,
+        0.894013726349474
+      ],
+      "task_macro_success_rate": 0.8523809523809524,
+      "measured_requests_after_warmup": 7580,
+      "median_sampling_ms": 79.30683437734842,
+      "median_policy_wall_ms": 91.6107576340437,
+      "median_request_wall_ms": 130.91794028878212,
+      "amortized_action_throughput_hz": 63.04626882734456,
+      "request_amortized_action_throughput_hz": 38.1918626963644,
+      "simulation_actions_per_wall_second_including_setup_and_video": 10.29141743630321,
+      "feedback_intervals_after_warmup": 7370,
+      "median_simulation_feedback_period_ms": 302.7942953631282,
+      "median_simulation_feedback_hz": 3.3025721267329127,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 206,
+      "simulation_actions_per_control_second_without_warmup": 12.97048563880719
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "Background Textures",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "task_macro_success_rate": 1,
+      "measured_requests_after_warmup": 997,
+      "median_sampling_ms": 79.33376915752888,
+      "median_policy_wall_ms": 91.12514927983284,
+      "median_request_wall_ms": 159.52849946916103,
+      "amortized_action_throughput_hz": 63.0248638517573,
+      "request_amortized_action_throughput_hz": 31.342362127380042,
+      "simulation_actions_per_wall_second_including_setup_and_video": 10.453106634392363,
+      "feedback_intervals_after_warmup": 967,
+      "median_simulation_feedback_period_ms": 324.5350141078234,
+      "median_simulation_feedback_hz": 3.0813316176348247,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 26,
+      "simulation_actions_per_control_second_without_warmup": 15.230514296749963
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "Camera Viewpoints",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 21,
+      "success_rate": 0.7,
+      "wilson_95": [
+        0.5212421254128504,
+        0.8333525173175619
+      ],
+      "task_macro_success_rate": 0.7,
+      "measured_requests_after_warmup": 1227,
+      "median_sampling_ms": 79.5192550867796,
+      "median_policy_wall_ms": 91.8403510004282,
+      "median_request_wall_ms": 158.2880411297083,
+      "amortized_action_throughput_hz": 62.87785259738016,
+      "request_amortized_action_throughput_hz": 31.587983301295495,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.650240738818754,
+      "feedback_intervals_after_warmup": 1197,
+      "median_simulation_feedback_period_ms": 312.98697367310524,
+      "median_simulation_feedback_hz": 3.195021148210582,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 15.348771830888158
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "Language Instructions",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 24,
+      "success_rate": 0.8,
+      "wilson_95": [
+        0.6269430358685175,
+        0.9049489282271013
+      ],
+      "task_macro_success_rate": 0.8,
+      "measured_requests_after_warmup": 1004,
+      "median_sampling_ms": 79.52001970261335,
+      "median_policy_wall_ms": 92.04609226435423,
+      "median_request_wall_ms": 158.53975620120764,
+      "amortized_action_throughput_hz": 62.8772480024383,
+      "request_amortized_action_throughput_hz": 31.537830761227788,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.069989233173219,
+      "feedback_intervals_after_warmup": 974,
+      "median_simulation_feedback_period_ms": 309.3595802783966,
+      "median_simulation_feedback_hz": 3.2324843442704676,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 15.228190670875154
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "Light Conditions",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "task_macro_success_rate": 1,
+      "measured_requests_after_warmup": 856,
+      "median_sampling_ms": 79.4478664174676,
+      "median_policy_wall_ms": 91.4190923795104,
+      "median_request_wall_ms": 158.62445905804634,
+      "amortized_action_throughput_hz": 62.93435211622862,
+      "request_amortized_action_throughput_hz": 31.52099007738978,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.55816960329455,
+      "feedback_intervals_after_warmup": 826,
+      "median_simulation_feedback_period_ms": 316.1260960623622,
+      "median_simulation_feedback_hz": 3.163294686695938,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 15.197484907368995
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "Objects Layout",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 24,
+      "success_rate": 0.8,
+      "wilson_95": [
+        0.6269430358685175,
+        0.9049489282271013
+      ],
+      "task_macro_success_rate": 0.8,
+      "measured_requests_after_warmup": 1150,
+      "median_sampling_ms": 79.00728285312653,
+      "median_policy_wall_ms": 91.43758751451969,
+      "median_request_wall_ms": 118.7428180128336,
+      "amortized_action_throughput_hz": 63.2853050938979,
+      "request_amortized_action_throughput_hz": 42.107809833682786,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.167897898130287,
+      "feedback_intervals_after_warmup": 1120,
+      "median_simulation_feedback_period_ms": 290.1196898892522,
+      "median_simulation_feedback_hz": 3.446853263843386,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 16.260897135243162
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "Robot Initial States",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 22,
+      "success_rate": 0.7333333333333333,
+      "wilson_95": [
+        0.555520383048111,
+        0.8581733668040368
+      ],
+      "task_macro_success_rate": 0.7333333333333333,
+      "measured_requests_after_warmup": 1264,
+      "median_sampling_ms": 78.55931017547846,
+      "median_policy_wall_ms": 91.2067424505949,
+      "median_request_wall_ms": 98.89570251107216,
+      "amortized_action_throughput_hz": 63.64618004958886,
+      "request_amortized_action_throughput_hz": 50.55831419408958,
+      "simulation_actions_per_wall_second_including_setup_and_video": 14.435139058053274,
+      "feedback_intervals_after_warmup": 1234,
+      "median_simulation_feedback_period_ms": 271.37790247797966,
+      "median_simulation_feedback_hz": 3.6848984050244944,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 17.716071011706457
+    },
+    {
+      "model": "A1",
+      "kind": "plus",
+      "group": "Sensor Noise",
+      "episodes": 30,
+      "tasks": 30,
+      "successes": 28,
+      "success_rate": 0.9333333333333333,
+      "wilson_95": [
+        0.7867654163738308,
+        0.9815229762087295
+      ],
+      "task_macro_success_rate": 0.9333333333333333,
+      "measured_requests_after_warmup": 1082,
+      "median_sampling_ms": 78.95081676542759,
+      "median_policy_wall_ms": 92.41610486060381,
+      "median_request_wall_ms": 97.0978457480669,
+      "amortized_action_throughput_hz": 63.33056711567157,
+      "request_amortized_action_throughput_hz": 51.49444832147106,
+      "simulation_actions_per_wall_second_including_setup_and_video": 5.494384194046209,
+      "feedback_intervals_after_warmup": 1052,
+      "median_simulation_feedback_period_ms": 450.7474498823285,
+      "median_simulation_feedback_hz": 2.2185372324592376,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 30,
+      "simulation_actions_per_control_second_without_warmup": 6.215540187695463
+    }
+  ],
+  "paired_comparisons": {
+    "clean_A1_minus_B1": {
+      "paired_episodes": 400,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": -0.25,
+      "improved": 6,
+      "regressed": 7,
+      "base_task_clusters": 40,
+      "cluster_bootstrap_95_pp": [
+        -1.7500000000000002,
+        1.25
+      ],
+      "mcnemar_exact_p_diagnostic": 1,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "clean_A1_minus_Ref": {
+      "paired_episodes": 400,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 1.25,
+      "improved": 12,
+      "regressed": 7,
+      "base_task_clusters": 40,
+      "cluster_bootstrap_95_pp": [
+        -1.25,
+        4.0
+      ],
+      "mcnemar_exact_p_diagnostic": 0.359283447265625,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "clean_B1_minus_Ref": {
+      "paired_episodes": 400,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 1.5,
+      "improved": 14,
+      "regressed": 8,
+      "base_task_clusters": 40,
+      "cluster_bootstrap_95_pp": [
+        -1.25,
+        4.75
+      ],
+      "mcnemar_exact_p_diagnostic": 0.28627872467041016,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "plus_A1_minus_B1": {
+      "paired_episodes": 210,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 0.0,
+      "improved": 11,
+      "regressed": 11,
+      "base_task_clusters": 40,
+      "cluster_bootstrap_95_pp": [
+        -4.265402843601896,
+        4.739336492890995
+      ],
+      "mcnemar_exact_p_diagnostic": 1,
+      "strict_pixel_identity": false,
+      "audited_rgb_exceptions": [
+        {
+          "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+          "field": "initial_main_rgb_sha256",
+          "raw_hashes": [
+            "897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496",
+            "d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c"
+          ]
+        }
+      ],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity.",
+      "strict_pixel_sensitivity": {
+        "paired_episodes": 209,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": 0.0,
+        "improved": 11,
+        "regressed": 11,
+        "base_task_clusters": 40,
+        "cluster_bootstrap_95_pp": [
+          -4.265402843601896,
+          4.741379310344827
+        ],
+        "mcnemar_exact_p_diagnostic": 1,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      }
+    },
+    "plus_A1_minus_Ref": {
+      "paired_episodes": 210,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 2.857142857142857,
+      "improved": 14,
+      "regressed": 8,
+      "base_task_clusters": 40,
+      "cluster_bootstrap_95_pp": [
+        -0.9090909090909091,
+        6.701030927835052
+      ],
+      "mcnemar_exact_p_diagnostic": 0.28627872467041016,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "plus_B1_minus_Ref": {
+      "paired_episodes": 210,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 2.857142857142857,
+      "improved": 15,
+      "regressed": 9,
+      "base_task_clusters": 40,
+      "cluster_bootstrap_95_pp": [
+        -1.7142857142857144,
+        6.989247311827956
+      ],
+      "mcnemar_exact_p_diagnostic": 0.30745625495910645,
+      "strict_pixel_identity": false,
+      "audited_rgb_exceptions": [
+        {
+          "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+          "field": "initial_main_rgb_sha256",
+          "raw_hashes": [
+            "897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496",
+            "d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c"
+          ]
+        }
+      ],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity.",
+      "strict_pixel_sensitivity": {
+        "paired_episodes": 209,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": 2.8708133971291865,
+        "improved": 15,
+        "regressed": 9,
+        "base_task_clusters": 40,
+        "cluster_bootstrap_95_pp": [
+          -1.744186046511628,
+          7.009345794392523
+        ],
+        "mcnemar_exact_p_diagnostic": 0.30745625495910645,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      }
+    },
+    "category_A1_minus_B1_Background Textures": {
+      "paired_episodes": 30,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 6.666666666666667,
+      "improved": 2,
+      "regressed": 0,
+      "base_task_clusters": 19,
+      "cluster_bootstrap_95_pp": [
+        0,
+        18.75
+      ],
+      "mcnemar_exact_p_diagnostic": 0.5,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "category_A1_minus_B1_Camera Viewpoints": {
+      "paired_episodes": 30,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": -10.0,
+      "improved": 1,
+      "regressed": 4,
+      "base_task_clusters": 18,
+      "cluster_bootstrap_95_pp": [
+        -25.0,
+        4.166666666666666
+      ],
+      "mcnemar_exact_p_diagnostic": 0.375,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "category_A1_minus_B1_Language Instructions": {
+      "paired_episodes": 30,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 3.3333333333333335,
+      "improved": 2,
+      "regressed": 1,
+      "base_task_clusters": 20,
+      "cluster_bootstrap_95_pp": [
+        -7.6923076923076925,
+        14.814814814814813
+      ],
+      "mcnemar_exact_p_diagnostic": 1,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "category_A1_minus_B1_Light Conditions": {
+      "paired_episodes": 30,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 3.3333333333333335,
+      "improved": 1,
+      "regressed": 0,
+      "base_task_clusters": 21,
+      "cluster_bootstrap_95_pp": [
+        0,
+        11.11111111111111
+      ],
+      "mcnemar_exact_p_diagnostic": 1,
+      "strict_pixel_identity": false,
+      "audited_rgb_exceptions": [
+        {
+          "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+          "field": "initial_main_rgb_sha256",
+          "raw_hashes": [
+            "897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496",
+            "d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c"
+          ]
+        }
+      ],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity.",
+      "strict_pixel_sensitivity": {
+        "paired_episodes": 29,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": 3.4482758620689653,
+        "improved": 1,
+        "regressed": 0,
+        "base_task_clusters": 21,
+        "cluster_bootstrap_95_pp": [
+          0,
+          12.5
+        ],
+        "mcnemar_exact_p_diagnostic": 1,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      }
+    },
+    "category_A1_minus_B1_Objects Layout": {
+      "paired_episodes": 30,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 0.0,
+      "improved": 1,
+      "regressed": 1,
+      "base_task_clusters": 24,
+      "cluster_bootstrap_95_pp": [
+        -9.375,
+        10.714285714285714
+      ],
+      "mcnemar_exact_p_diagnostic": 1,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "category_A1_minus_B1_Robot Initial States": {
+      "paired_episodes": 30,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": 3.3333333333333335,
+      "improved": 4,
+      "regressed": 3,
+      "base_task_clusters": 20,
+      "cluster_bootstrap_95_pp": [
+        -12.903225806451612,
+        22.58064516129032
+      ],
+      "mcnemar_exact_p_diagnostic": 1,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    },
+    "category_A1_minus_B1_Sensor Noise": {
+      "paired_episodes": 30,
+      "control_unpaired": 0,
+      "treatment_unpaired": 0,
+      "treatment_minus_control_pp": -6.666666666666667,
+      "improved": 0,
+      "regressed": 2,
+      "base_task_clusters": 23,
+      "cluster_bootstrap_95_pp": [
+        -16.666666666666664,
+        0
+      ],
+      "mcnemar_exact_p_diagnostic": 0.5,
+      "strict_pixel_identity": true,
+      "audited_rgb_exceptions": [],
+      "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+    }
+  },
+  "registered_clean_retention_criterion_met": true,
+  "primary_camera_A1_minus_B1": {
+    "paired_episodes": 30,
+    "control_unpaired": 0,
+    "treatment_unpaired": 0,
+    "treatment_minus_control_pp": -10.0,
+    "improved": 1,
+    "regressed": 4,
+    "base_task_clusters": 18,
+    "cluster_bootstrap_95_pp": [
+      -25.0,
+      4.166666666666666
+    ],
+    "mcnemar_exact_p_diagnostic": 0.375,
+    "strict_pixel_identity": true,
+    "audited_rgb_exceptions": [],
+    "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+  },
+  "efficiency": [
+    {
+      "replan_steps": 1,
+      "num_steps": 10,
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 99,
+      "success_rate": 0.99,
+      "wilson_95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "task_macro_success_rate": 0.99,
+      "measured_requests_after_warmup": 10557,
+      "median_sampling_ms": 76.90683752298355,
+      "median_policy_wall_ms": 90.70486389100552,
+      "median_request_wall_ms": 93.5449618846178,
+      "amortized_action_throughput_hz": 13.002745038126822,
+      "request_amortized_action_throughput_hz": 10.690046581380203,
+      "simulation_actions_per_wall_second_including_setup_and_video": 6.149476721954382,
+      "feedback_intervals_after_warmup": 10457,
+      "median_simulation_feedback_period_ms": 132.71164149045944,
+      "median_simulation_feedback_hz": 7.535133985000776,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 7.418455275909342,
+      "paired_success_vs_R5_N10": {
+        "paired_episodes": 100,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": 0.0,
+        "improved": 1,
+        "regressed": 1,
+        "base_task_clusters": 10,
+        "cluster_bootstrap_95_pp": [
+          -3.0,
+          3.0
+        ],
+        "mcnemar_exact_p_diagnostic": 1,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      },
+      "sampling_speedup_vs_R5_N10": 1.048674607239635,
+      "feedback_frequency_ratio_vs_R5_N10": 2.0451571825128263
+    },
+    {
+      "replan_steps": 5,
+      "num_steps": 3,
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 99,
+      "success_rate": 0.99,
+      "wilson_95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "task_macro_success_rate": 0.99,
+      "measured_requests_after_warmup": 2130,
+      "median_sampling_ms": 63.07558435946703,
+      "median_policy_wall_ms": 76.70995779335499,
+      "median_request_wall_ms": 79.68575414270163,
+      "amortized_action_throughput_hz": 79.26997507474616,
+      "request_amortized_action_throughput_hz": 62.746472738978866,
+      "simulation_actions_per_wall_second_including_setup_and_video": 12.260697632382865,
+      "feedback_intervals_after_warmup": 2030,
+      "median_simulation_feedback_period_ms": 252.04118434339762,
+      "median_simulation_feedback_hz": 3.967605542741514,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 18.93990621240429,
+      "paired_success_vs_R5_N10": {
+        "paired_episodes": 100,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": 0.0,
+        "improved": 1,
+        "regressed": 1,
+        "base_task_clusters": 10,
+        "cluster_bootstrap_95_pp": [
+          -3.0,
+          3.0
+        ],
+        "mcnemar_exact_p_diagnostic": 1,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      },
+      "sampling_speedup_vs_R5_N10": 1.2786286239352513,
+      "feedback_frequency_ratio_vs_R5_N10": 1.0768722877745445
+    },
+    {
+      "replan_steps": 5,
+      "num_steps": 10,
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 99,
+      "success_rate": 0.99,
+      "wilson_95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "task_macro_success_rate": 0.99,
+      "measured_requests_after_warmup": 2153,
+      "median_sampling_ms": 80.65024763345718,
+      "median_policy_wall_ms": 94.31573748588562,
+      "median_request_wall_ms": 97.3186194896698,
+      "amortized_action_throughput_hz": 61.99608986601283,
+      "request_amortized_action_throughput_hz": 51.37762975080777,
+      "simulation_actions_per_wall_second_including_setup_and_video": 11.871330226487395,
+      "feedback_intervals_after_warmup": 2053,
+      "median_simulation_feedback_period_ms": 271.4161667972803,
+      "median_simulation_feedback_hz": 3.6843789071227144,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 17.527801868323973,
+      "paired_success_vs_R5_N10": {
+        "paired_episodes": 100,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": 0.0,
+        "improved": 0,
+        "regressed": 0,
+        "base_task_clusters": 10,
+        "cluster_bootstrap_95_pp": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p_diagnostic": 1,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      },
+      "sampling_speedup_vs_R5_N10": 1.0,
+      "feedback_frequency_ratio_vs_R5_N10": 1.0
+    },
+    {
+      "replan_steps": 10,
+      "num_steps": 3,
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 100,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.9630065017930143,
+        1
+      ],
+      "task_macro_success_rate": 1,
+      "measured_requests_after_warmup": 1055,
+      "median_sampling_ms": 63.14280070364475,
+      "median_policy_wall_ms": 77.11107842624187,
+      "median_request_wall_ms": 80.22662065923214,
+      "amortized_action_throughput_hz": 158.37118228147864,
+      "request_amortized_action_throughput_hz": 124.64690545144185,
+      "simulation_actions_per_wall_second_including_setup_and_video": 13.692896245400458,
+      "feedback_intervals_after_warmup": 955,
+      "median_simulation_feedback_period_ms": 423.8825961947441,
+      "median_simulation_feedback_hz": 2.3591438029707894,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 22.378348315592476,
+      "paired_success_vs_R5_N10": {
+        "paired_episodes": 100,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": 1.0,
+        "improved": 1,
+        "regressed": 0,
+        "base_task_clusters": 10,
+        "cluster_bootstrap_95_pp": [
+          0,
+          3.0
+        ],
+        "mcnemar_exact_p_diagnostic": 1,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      },
+      "sampling_speedup_vs_R5_N10": 1.2772675069004638,
+      "feedback_frequency_ratio_vs_R5_N10": 0.64030976792589
+    },
+    {
+      "replan_steps": 10,
+      "num_steps": 10,
+      "episodes": 100,
+      "tasks": 10,
+      "successes": 96,
+      "success_rate": 0.96,
+      "wilson_95": [
+        0.9016292856411208,
+        0.9843366960084523
+      ],
+      "task_macro_success_rate": 0.96,
+      "measured_requests_after_warmup": 1105,
+      "median_sampling_ms": 80.66742308437824,
+      "median_policy_wall_ms": 94.56436149775982,
+      "median_request_wall_ms": 97.71249443292618,
+      "amortized_action_throughput_hz": 123.9657797118421,
+      "request_amortized_action_throughput_hz": 102.34105738508606,
+      "simulation_actions_per_wall_second_including_setup_and_video": 13.739682480333862,
+      "feedback_intervals_after_warmup": 1005,
+      "median_simulation_feedback_period_ms": 443.04592348635197,
+      "median_simulation_feedback_hz": 2.2571023611524215,
+      "feedback_scope": "Wall-clock simulator request-to-request cycles including preprocessing, video append, inference and action execution; not physical robot frequency",
+      "control_timed_episodes_without_warmup": 99,
+      "simulation_actions_per_control_second_without_warmup": 21.5734544321747,
+      "paired_success_vs_R5_N10": {
+        "paired_episodes": 100,
+        "control_unpaired": 0,
+        "treatment_unpaired": 0,
+        "treatment_minus_control_pp": -3.0,
+        "improved": 1,
+        "regressed": 4,
+        "base_task_clusters": 10,
+        "cluster_bootstrap_95_pp": [
+          -6.0,
+          -1.0
+        ],
+        "mcnemar_exact_p_diagnostic": 0.375,
+        "strict_pixel_identity": true,
+        "audited_rgb_exceptions": [],
+        "note": "Task-cluster bootstrap is exploratory; McNemar assumes independent pairs; neither measures training seed variance. Any bounded RGB exception is disclosed separately; it does not certify strict pixel identity."
+      },
+      "sampling_speedup_vs_R5_N10": 0.9997870831834669,
+      "feedback_frequency_ratio_vs_R5_N10": 0.6126140709330808
+    }
+  ],
+  "training": [
+    {
+      "model": "B1",
+      "batch": 16,
+      "steps": 5000,
+      "seed": 42,
+      "trainable_parameters": 466957072,
+      "total_parameters": 3403421456,
+      "median_step_seconds": 2.414872931316495,
+      "peak_allocator_GiB": 17.732643365859985,
+      "parameter_update_sample_audit": {
+        "changed_sampled_trainable_leaves": 51,
+        "changed_trainable_paths": [
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoder_norm",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoder_norm",
+            "scale"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_0",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_0",
+            "scale"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_1",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_1",
+            "scale"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_0",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_0",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_1",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_1",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "key",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "key",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "out",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "out",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "query",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "query",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "value",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "value",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "embedding",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "embedding",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "head",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "head",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "pos_embedding"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum_1",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum_1",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum_1",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum_1",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum_1",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum_1",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "gating_einsum_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "gating_einsum_lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "linear_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "linear_lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "gating_einsum_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "gating_einsum_lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "linear_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "linear_lora_b"
+          ],
+          [
+            "action_in_proj",
+            "bias"
+          ],
+          [
+            "action_in_proj",
+            "kernel"
+          ],
+          [
+            "action_out_proj",
+            "bias"
+          ],
+          [
+            "action_out_proj",
+            "kernel"
+          ],
+          [
+            "time_mlp_in",
+            "bias"
+          ],
+          [
+            "time_mlp_in",
+            "kernel"
+          ],
+          [
+            "time_mlp_out",
+            "bias"
+          ],
+          [
+            "time_mlp_out",
+            "kernel"
+          ]
+        ],
+        "changed_sampled_frozen_leaves": 0,
+        "changed_frozen_paths": [],
+        "passed": true,
+        "scope": "Every leaf sampled; not a full elementwise comparison of all parameters"
+      },
+      "checkpoint": "/root/pi05_storage/checkpoints/B1_20261027T040204Z/4999"
+    },
+    {
+      "model": "A1",
+      "batch": 16,
+      "steps": 5000,
+      "seed": 42,
+      "trainable_parameters": 466957072,
+      "total_parameters": 3403421456,
+      "median_step_seconds": 2.408943399786949,
+      "peak_allocator_GiB": 17.730862855911255,
+      "parameter_update_sample_audit": {
+        "changed_sampled_trainable_leaves": 51,
+        "changed_trainable_paths": [
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoder_norm",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoder_norm",
+            "scale"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_0",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_0",
+            "scale"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_1",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "LayerNorm_1",
+            "scale"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_0",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_0",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_1",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MlpBlock_0",
+            "Dense_1",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "key",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "key",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "out",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "out",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "query",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "query",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "value",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "Transformer",
+            "encoderblock",
+            "MultiHeadDotProductAttention_0",
+            "value",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "embedding",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "embedding",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "head",
+            "bias"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "head",
+            "kernel"
+          ],
+          [
+            "PaliGemma",
+            "img",
+            "pos_embedding"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum_1",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "attn_vec_einsum_1",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum_1",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "kv_einsum_1",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum_1",
+            "lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "attn",
+            "q_einsum_1",
+            "lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "gating_einsum_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "gating_einsum_lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "linear_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp",
+            "linear_lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "gating_einsum_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "gating_einsum_lora_b"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "linear_lora_a"
+          ],
+          [
+            "PaliGemma",
+            "llm",
+            "layers",
+            "mlp_1",
+            "linear_lora_b"
+          ],
+          [
+            "action_in_proj",
+            "bias"
+          ],
+          [
+            "action_in_proj",
+            "kernel"
+          ],
+          [
+            "action_out_proj",
+            "bias"
+          ],
+          [
+            "action_out_proj",
+            "kernel"
+          ],
+          [
+            "time_mlp_in",
+            "bias"
+          ],
+          [
+            "time_mlp_in",
+            "kernel"
+          ],
+          [
+            "time_mlp_out",
+            "bias"
+          ],
+          [
+            "time_mlp_out",
+            "kernel"
+          ]
+        ],
+        "changed_sampled_frozen_leaves": 0,
+        "changed_frozen_paths": [],
+        "passed": true,
+        "scope": "Every leaf sampled; not a full elementwise comparison of all parameters"
+      },
+      "checkpoint": "/root/autodl-tmp/vla_reproduction/pi05_robustness/cache/final_checkpoints/A1_20261027T040204Z/4999"
+    }
+  ],
+  "input_pairing_exception": {
+    "status": "audited_bounded_rgb_exception",
+    "pair_id": "plus/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_light_4/0",
+    "field": "initial_main_rgb_sha256",
+    "raw_hashes": [
+      "897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496",
+      "d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c"
+    ],
+    "metrics": {
+      "raw": {
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "total_channels": 196608,
+        "changed_channels": 9,
+        "max_uint8_difference": 1,
+        "coordinates": [
+          [
+            84,
+            124,
+            2
+          ],
+          [
+            84,
+            127,
+            1
+          ],
+          [
+            85,
+            125,
+            0
+          ],
+          [
+            85,
+            125,
+            1
+          ],
+          [
+            86,
+            125,
+            0
+          ],
+          [
+            86,
+            125,
+            1
+          ],
+          [
+            87,
+            125,
+            0
+          ],
+          [
+            87,
+            125,
+            1
+          ],
+          [
+            87,
+            125,
+            2
+          ]
+        ],
+        "values_at_changed_channels": [
+          [
+            80,
+            79
+          ],
+          [
+            86,
+            85
+          ],
+          [
+            85,
+            84
+          ],
+          [
+            85,
+            84
+          ],
+          [
+            85,
+            84
+          ],
+          [
+            85,
+            84
+          ],
+          [
+            84,
+            83
+          ],
+          [
+            84,
+            83
+          ],
+          [
+            82,
+            81
+          ]
+        ],
+        "sha256": [
+          "897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496",
+          "d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c"
+        ]
+      },
+      "model_input": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "total_channels": 150528,
+        "changed_channels": 10,
+        "max_uint8_difference": 1,
+        "coordinates": [
+          [
+            147,
+            113,
+            2
+          ],
+          [
+            147,
+            114,
+            0
+          ],
+          [
+            147,
+            114,
+            1
+          ],
+          [
+            148,
+            114,
+            0
+          ],
+          [
+            148,
+            114,
+            1
+          ],
+          [
+            149,
+            114,
+            0
+          ],
+          [
+            149,
+            114,
+            1
+          ],
+          [
+            149,
+            115,
+            2
+          ],
+          [
+            150,
+            112,
+            1
+          ],
+          [
+            150,
+            115,
+            2
+          ]
+        ],
+        "values_at_changed_channels": [
+          [
+            83,
+            82
+          ],
+          [
+            83,
+            82
+          ],
+          [
+            83,
+            82
+          ],
+          [
+            84,
+            83
+          ],
+          [
+            84,
+            83
+          ],
+          [
+            84,
+            83
+          ],
+          [
+            84,
+            83
+          ],
+          [
+            78,
+            77
+          ],
+          [
+            86,
+            85
+          ],
+          [
+            77,
+            76
+          ]
+        ],
+        "sha256": [
+          "0d99261d821cdc928139c10f3b0a773226d89bb3f30db40b46144b3b9d57a65e",
+          "b1094fc14c32aa66ad2b0076e5e529943fad502b8abf8ac470b8f7227df0d5fb"
+        ]
+      }
+    },
+    "recovered_files": [
+      "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/render_hash_exception/0/897460048727312b97f53cbbbacc5d0cefefd378a2be0ccddc18cb79331e2496.npz",
+      "/root/autodl-tmp/vla_reproduction/pi05_robustness/runs/render_hash_exception/1/d6b3e0233d882066428610fd320eecc4ec6e9002779103035f90691fc3297b4c.npz"
+    ],
+    "physical_state_and_all_other_pairing_fields_equal": true,
+    "all_three_observed_successes": true,
+    "original_strict_pixel_gate_passed": false,
+    "model_input_byte_identical": false,
+    "original_records_unchanged": true,
+    "interpretation": "The exact original frames were recovered by hash. Full210 counts remain unchanged; comparisons applying this sole exception must disclose it and also report strict209 sensitivity. No generic pixel tolerance is authorized."
+  },
+  "all_original_strict_pairing_gates_passed": false,
+  "analysis_integrity_amendment": {
+    "timing": "Post hoc data-quality investigation after all scored outcomes were available",
+    "strict_pixel_pairing_deviation_count": 1,
+    "exception_proof_sha256": "8d0d65f604eb539c4b596034e44d3861cc15560b61db14a548d0476be74c02a7",
+    "rule": "Only this exact pair ID and these two recovered raw hashes may bypass the main-RGB equality gate; all other fields stay exact. Report full210 and strict209 sensitivity, retain all original outcomes.",
+    "primary_camera_clean_and_efficiency_inputs": "All exact; no exception applies",
+    "weights_or_episode_scores_changed": false
+  },
+  "limitations": [
+    "One training seed; intervals do not measure training-seed variance.",
+    "Heldout perturbation variants share the40 base tasks.",
+    "Per-category final sample30.",
+    "Concurrent quality-run latency excluded from serial efficiency claims.",
+    "Frequency is measured simulator feedback, not physical robot Hz.",
+    "Historical default-autotune389/400 and387/400 are separate from the final fixed-kernel common reference; failed exact replay was not relabeled as passed.",
+    "No GitHub publication is certified by this analysis."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "frozen",
+  "batch_size": 16,
+  "num_train_steps": 5000,
+  "seed": 42,
+  "augmentation": "view_wrist_drop",
+  "augmentation_status": "registered_after_diagnostic_before_final_test",
+  "diagnosis_report_sha256": "cc70298e85ac24fee6fd1dd1ce24da439f0e487e92964f86dbc076eb0a072c36",
+  "dataset_verified_manifest": "runs/dataset_download/verified_manifest.json",
+  "dataset_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+  "checkpoint": "gs://openpi-assets/checkpoints/pi05_libero",
+  "learning_rate": {
+    "warmup_steps": 100,
+    "peak_lr": 1e-05,
+    "decay_steps": 5000,
+    "decay_lr": 1e-06
+  },
+  "note": "Single-seed controlled continuation from official pi05_libero; only registered extra augmentation differs.",
+  "frozen_at_utc": "2026-10-27T04:07:14.561141+00:00",
+  "dataset_manifest_sha256": "af7452c7b3f5d710df25d06fe064b5e6f43b2b2251261531b67493a60c85a307",
+  "augmentation_registration_sha256": "ce323811c68e7bbe4c095ad90ccd17436c006efadc0e7773ca97898c4e892f1a",
+  "analysis_registration_sha256": "f2df5e84dae324bce796cf395ddb4e7205ce72a9c71c3ed592eac15576942547",
+  "resource_ladder_sha256": "994714e6176ca0d9dace3bb59d762877eae1d8dc766cba95de65e1e065f7b086",
+  "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+  "source_hashes": {
+    "src/openpi/models/model.py": "b357f10a0e88d577a7390eb31ac22ce73ca47c62f5ba768bc24914cdb742fda6",
+    "src/openpi/training/config.py": "0e7133d6344739e7ad6fd50bc8d8fb053b48912c9a2389199da95dcbb4412c9a",
+    "src/openpi/policies/policy.py": "272d20b4d80f0b99a90654db8cafd7126ff04aa7c04c693044f437ea32011e78",
+    "scripts/train.py": "d8b79ae7172dbae9ac60874f16bf0a6b2f8b7ffdf98a085124908daf7b9654da",
+    "src/openpi/models/robust_augmentation.py": "ea1b6407aa7cd4c40633dd7f58777f5ba51f5d751115ac710f8f861f7a501612",
+    "src/openpi/training/robust_audit.py": "82fc54633f134f766b1366c4508455b00832d10ed1299164e79b5c1455573150"
+  },
+  "checkpoint_rule": "last step4999; full standard checkpoint persisted and checked before releasing RAM source"
+}

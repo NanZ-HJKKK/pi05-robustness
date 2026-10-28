@@ -1,0 +1,33 @@
+verified checkpoints/pi05_libero/params/example 660 bytes
+verified checkpoints/pi05_libero/params/resume 9 bytes
+verified checkpoints/pi05_libero/params/composite 9 bytes
+verified checkpoints/pi05_libero/params/truncated 9 bytes
+test_drop_probability (test_experiment.AugmentationTests.test_drop_probability) ... ok
+test_identity_determinism_and_jit (test_experiment.AugmentationTests.test_identity_determinism_and_jit) ... ok
+test_registered_camera_mixture_and_finite_geometry (test_experiment.AugmentationTests.test_registered_camera_mixture_and_finite_geometry) ... ok
+test_all_patched_sources_compile (test_experiment.ProtocolTests.test_all_patched_sources_compile) ... ok
+test_base_matching_longest_prefix (test_experiment.ProtocolTests.test_base_matching_longest_prefix) ... ok
+test_checkpoint_range_validation_and_promotion (test_experiment.ProtocolTests.test_checkpoint_range_validation_and_promotion) ... ok
+test_checkpoint_resumes_partial_range_bytes (test_experiment.ProtocolTests.test_checkpoint_resumes_partial_range_bytes) ... ok
+test_composite_gcs_object_crc32c_without_md5 (test_experiment.ProtocolTests.test_composite_gcs_object_crc32c_without_md5) ... ok
+test_error_and_duplicate_not_silently_success (test_experiment.ProtocolTests.test_error_and_duplicate_not_silently_success) ... ok
+test_feedback_cycles_are_separate_from_sampling_throughput (test_experiment.ProtocolTests.test_feedback_cycles_are_separate_from_sampling_throughput) ... ok
+test_heldout_is_disjoint_and_keeps_clean_plan (test_experiment.ProtocolTests.test_heldout_is_disjoint_and_keeps_clean_plan) ... ok
+test_pairing_rejects_changed_camera_inputs (test_experiment.ProtocolTests.test_pairing_rejects_changed_camera_inputs) ... ok
+test_pairing_rejects_changed_physical_states (test_experiment.ProtocolTests.test_pairing_rejects_changed_physical_states) ... ok
+test_plus_virtual_bddl_resolution (test_experiment.ProtocolTests.test_plus_virtual_bddl_resolution) ... ok
+test_request_rng_pairs_independent_of_model (test_experiment.ProtocolTests.test_request_rng_pairs_independent_of_model) ... ok
+test_rgb_exception_is_scoped_and_disclosed (test_experiment.ProtocolTests.test_rgb_exception_is_scoped_and_disclosed) ... ok
+test_subset_names_and_counts (test_experiment.ProtocolTests.test_subset_names_and_counts) ... ok
+test_truncated_response_retries_received_prefix (test_experiment.ProtocolTests.test_truncated_response_retries_received_prefix) ... ok
+test_warmup_removed_and_throughput_units (test_experiment.ProtocolTests.test_warmup_removed_and_throughput_units) ... ok
+test_wilson_zero_and_all_successes (test_experiment.ProtocolTests.test_wilson_zero_and_all_successes) ... ok
+test_parallel_ranges_and_lfs_hash (test_hf_transfer.HFTransferTests.test_parallel_ranges_and_lfs_hash) ... ok
+test_reject_wrong_range_or_corrupt_body (test_hf_transfer.HFTransferTests.test_reject_wrong_range_or_corrupt_body) ... ok
+test_resume_partial_prefix_and_git_blob_hash (test_hf_transfer.HFTransferTests.test_resume_partial_prefix_and_git_blob_hash) ... ok
+test_truncated_response_preserves_prefix (test_hf_transfer.HFTransferTests.test_truncated_response_preserves_prefix) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 3.481s
+
+OK

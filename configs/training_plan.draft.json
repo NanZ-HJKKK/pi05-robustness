@@ -1,0 +1,14 @@
+{
+  "status": "draft",
+  "batch_size": 16,
+  "num_train_steps": 5000,
+  "seed": 42,
+  "augmentation": "view_drop",
+  "augmentation_status": "hypothesis_pending_Ref_failure_analysis_and_camera_ablation",
+  "diagnosis_report_sha256": null,
+  "dataset_verified_manifest": null,
+  "dataset_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+  "checkpoint": "gs://openpi-assets/checkpoints/pi05_libero",
+  "learning_rate": {"warmup_steps": 100, "peak_lr": 0.00001, "decay_steps": 5000, "decay_lr": 0.000001},
+  "note": "Freeze the same batch, steps, scheduler, GPU and initialization for B1/A1 after resource probe. Do not tune on the 210 test tasks. This draft cannot launch B1/A1."
+}

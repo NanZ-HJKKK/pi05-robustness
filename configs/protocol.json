@@ -1,0 +1,112 @@
+{
+  "version": 2,
+  "status": "evaluation_fixed_training_pending_resource_probe_and_diagnosis",
+  "upstream_commits": {
+    "openpi": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "libero_plus": "4976dc30028e805ff8094b55501d532c48fec182",
+    "libero": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c"
+  },
+  "subset_sha256": "0bc32f76648b8f752e3ab894750434bedd8266de3d2d8c9b99206db197a48d9e",
+  "prompts_sha256": "1cd4c233d015569950764f8425e48e6f256492a3640d68e5b6d2dd74063c006a",
+  "models": [
+    "Ref",
+    "B1",
+    "A1"
+  ],
+  "training_seed": 42,
+  "evaluation_seed": 7,
+  "clean": {
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "trials_per_task": 10,
+    "episodes_per_model": 400
+  },
+  "plus": {
+    "episodes_per_model": 210,
+    "trials_per_task": 1,
+    "prompt_rule": "official clean base task.language except Language Instructions; same canonical prompt as clean evaluation; BDDL text retained for audit"
+  },
+  "camera_diagnosis": {
+    "suite": "libero_spatial",
+    "conditions": [
+      "black_main",
+      "black_wrist"
+    ],
+    "episodes_per_condition": 100
+  },
+  "inference": {
+    "replan_steps": 5,
+    "num_steps": 10,
+    "wait_steps": 10,
+    "flow_noise_seed": "SHA256(eval_seed:suite/base_task/init_state_index:environment_step), first uint32 little-endian; shared across models, camera ablations and perturbation variants",
+    "max_steps": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    }
+  },
+  "efficiency": {
+    "suite": "libero_spatial",
+    "episodes_per_setting": 100,
+    "settings": [
+      {
+        "replan_steps": 1,
+        "num_steps": 10
+      },
+      {
+        "replan_steps": 5,
+        "num_steps": 10
+      },
+      {
+        "replan_steps": 10,
+        "num_steps": 10
+      },
+      {
+        "replan_steps": 5,
+        "num_steps": 3
+      },
+      {
+        "replan_steps": 10,
+        "num_steps": 3
+      }
+    ],
+    "warmup_requests": 5,
+    "latency": "GPU synchronized model sampling and separate request wall time",
+    "throughput": "replan_steps / median_sampling_seconds; amortized action throughput, not closed-loop feedback Hz"
+  },
+  "training": {
+    "status": "not_started",
+    "steps_proposed": 5000,
+    "batch_proposed": 16,
+    "same_B1_A1": [
+      "GPU",
+      "dataset_revision",
+      "initial_checkpoint",
+      "norm_stats",
+      "seed",
+      "batch",
+      "steps",
+      "optimizer",
+      "learning_rate"
+    ],
+    "augmentation_proposed": "view_drop only if diagnosis supports camera failure; otherwise register a revised strategy before training",
+    "checkpoint_rule": "last step; no selection on test subset",
+    "training_seeds": 1,
+    "claim_scope": "exploratory single-training-seed study"
+  },
+  "acceptance": {
+    "target_A1_minus_B1_pp_min": 0,
+    "clean_drop_pp_max": 2,
+    "note": "estimate with intervals; 30 samples per category cannot establish a small general gain"
+  },
+  "budget": {
+    "status": "pending_current_remaining_budget",
+    "automatic_instance_start": false
+  },
+  "results": null
+}

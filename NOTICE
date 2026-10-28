@@ -1,0 +1,7 @@
+Study scripts and analyses are provided under Apache-2.0.
+The openpi source fixtures and derived patches retain the upstream Apache-2.0 terms.
+openpi: https://github.com/Physical-Intelligence/openpi
+LIBERO: https://github.com/Lifelong-Robot-Learning/LIBERO
+LIBERO-Plus: https://github.com/sylvestf/LIBERO-plus
+Third-party model weights, simulator assets and training datasets are not bundled.
+Their respective licenses and access conditions continue to apply.

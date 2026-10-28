@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-28T02:19:19.539105+00:00",
+  "machine_audit_passed": true,
+  "sampled_video_review_complete": true,
+  "selected_clips": 25,
+  "sampled_frames": 85,
+  "publication_figures_reviewed": true,
+  "github_published": false,
+  "original_strict_pixel_gate_passed": false,
+  "bounded_rgb_exception_count": 1,
+  "scope": "Completion of registered single-seed study and sampled visual review; no demonstrated augmentation superiority."
+}
